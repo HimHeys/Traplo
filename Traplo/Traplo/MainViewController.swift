@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var btnSignIn: UIButton!
     @IBOutlet weak var btnSignUp: UIButton!
@@ -25,7 +25,12 @@ class ViewController: UIViewController {
         btnSignUp.layer.cornerRadius = 10
 
     }
-
-
+    
+    @IBAction func pushBtnSignIn(_ sender: Any) {
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+        vcName?.modalPresentationStyle = .overFullScreen
+        vcName?.modalPresentationStyle = .overCurrentContext
+        self.present(vcName!, animated: true, completion: nil)
+    }
+    
 }
-

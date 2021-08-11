@@ -19,53 +19,112 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="wr4-M8-1Ik">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44L-Wv-Mi1">
-                                <rect key="frame" x="0.0" y="544" width="414" height="352"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EB-mh-BO4">
-                                <rect key="frame" x="30" y="574" width="354" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="lcG-i3-ha5"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="카카오로 이용하기">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onKakaoLoginByAppTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3TW-S4-tQI"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="44L-Wv-Mi1" secondAttribute="bottom" id="Cxa-yP-xvy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wr4-M8-1Ik" secondAttribute="trailing" id="MGX-eG-YoE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="44L-Wv-Mi1" secondAttribute="trailing" id="OMk-ym-6ku"/>
                             <constraint firstAttribute="top" secondItem="wr4-M8-1Ik" secondAttribute="top" id="Sey-l7-mCT"/>
                             <constraint firstItem="wr4-M8-1Ik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zy7-ry-ZZL"/>
                             <constraint firstItem="wr4-M8-1Ik" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="azN-AH-bkP"/>
-                            <constraint firstItem="44L-Wv-Mi1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="eoy-dF-BwB"/>
-                            <constraint firstItem="44L-Wv-Mi1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nhd-SK-80Z"/>
-                            <constraint firstItem="9EB-mh-BO4" firstAttribute="leading" secondItem="44L-Wv-Mi1" secondAttribute="leading" constant="30" id="r0M-Wy-ESg"/>
-                            <constraint firstItem="9EB-mh-BO4" firstAttribute="trailing" secondItem="44L-Wv-Mi1" secondAttribute="trailing" constant="-30" id="rp4-dd-9OE"/>
-                            <constraint firstItem="9EB-mh-BO4" firstAttribute="top" secondItem="44L-Wv-Mi1" secondAttribute="top" constant="30" id="tFR-Vb-aqD"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="backGroundBtn" destination="44L-Wv-Mi1" id="3QS-Dw-X68"/>
-                        <outlet property="btnSignIn" destination="9EB-mh-BO4" id="ss8-eG-RlQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="dXz-VF-u0i">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="DZz-M8-PZX" customClass="LoginViewController" customModule="Traplo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CjQ-zj-0Ul">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0D-DC-Iua">
+                                <rect key="frame" x="0.0" y="632" width="414" height="364"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKv-Vt-vSP">
+                                <rect key="frame" x="30" y="674" width="354" height="46"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Jff-ao-gtc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="카카오로 이용하기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onKakaoLoginByAppTouched:" destination="DZz-M8-PZX" eventType="touchUpInside" id="EXc-Wu-eal"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-BP-M81">
+                                <rect key="frame" x="0.0" y="632" width="414" height="42"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="minus" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXa-zO-dHD">
+                                <rect key="frame" x="30" y="786" width="354" height="46"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="D2H-eF-B0S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="네이버로 이용하기"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89G-rd-jLs">
+                                <rect key="frame" x="30" y="730" width="354" height="46"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="jM2-RQ-75u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="구글로 이용하기"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AmF-M5-0eR"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="89G-rd-jLs" firstAttribute="top" secondItem="RKv-Vt-vSP" secondAttribute="bottom" constant="10" id="46C-dM-aWE"/>
+                            <constraint firstItem="OXa-zO-dHD" firstAttribute="leading" secondItem="AmF-M5-0eR" secondAttribute="leading" constant="30" id="Afh-VY-PX7"/>
+                            <constraint firstItem="89G-rd-jLs" firstAttribute="leading" secondItem="b0D-DC-Iua" secondAttribute="leading" constant="30" id="D0T-Eo-xtf"/>
+                            <constraint firstItem="RKv-Vt-vSP" firstAttribute="trailing" secondItem="b0D-DC-Iua" secondAttribute="trailing" constant="-30" id="D4q-DR-KWJ"/>
+                            <constraint firstItem="b0D-DC-Iua" firstAttribute="leading" secondItem="AmF-M5-0eR" secondAttribute="leading" id="L24-Kw-tbl"/>
+                            <constraint firstItem="RKv-Vt-vSP" firstAttribute="top" secondItem="cTd-BP-M81" secondAttribute="bottom" id="LHo-i6-thm"/>
+                            <constraint firstItem="b0D-DC-Iua" firstAttribute="top" secondItem="AmF-M5-0eR" secondAttribute="bottom" constant="-230" id="MLD-Bf-M3t"/>
+                            <constraint firstAttribute="bottom" secondItem="b0D-DC-Iua" secondAttribute="bottom" constant="-100" id="N5e-zI-mZ2"/>
+                            <constraint firstItem="cTd-BP-M81" firstAttribute="top" secondItem="b0D-DC-Iua" secondAttribute="top" id="TlG-li-dGc"/>
+                            <constraint firstItem="cTd-BP-M81" firstAttribute="trailing" secondItem="b0D-DC-Iua" secondAttribute="trailing" id="Ucz-uO-aAX"/>
+                            <constraint firstItem="AmF-M5-0eR" firstAttribute="trailing" secondItem="b0D-DC-Iua" secondAttribute="trailing" id="VY6-vi-2a9"/>
+                            <constraint firstItem="cTd-BP-M81" firstAttribute="leading" secondItem="b0D-DC-Iua" secondAttribute="leading" id="Z1x-Ai-H0f"/>
+                            <constraint firstItem="RKv-Vt-vSP" firstAttribute="leading" secondItem="b0D-DC-Iua" secondAttribute="leading" constant="30" id="ZY2-1h-J6a"/>
+                            <constraint firstItem="OXa-zO-dHD" firstAttribute="top" secondItem="89G-rd-jLs" secondAttribute="bottom" constant="10" id="kg6-aJ-dMp"/>
+                            <constraint firstItem="89G-rd-jLs" firstAttribute="trailing" secondItem="b0D-DC-Iua" secondAttribute="trailing" constant="-30" id="rtg-Tg-F5H"/>
+                            <constraint firstItem="AmF-M5-0eR" firstAttribute="trailing" secondItem="OXa-zO-dHD" secondAttribute="trailing" constant="30" id="wib-RI-mXT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundBtn" destination="b0D-DC-Iua" id="lKu-ub-nsg"/>
+                        <outlet property="btnGoogleLogIn" destination="89G-rd-jLs" id="xbs-LS-vRU"/>
+                        <outlet property="btnKakaoLogIn" destination="RKv-Vt-vSP" id="KG2-Ao-ET0"/>
+                        <outlet property="btnNaverLogIn" destination="OXa-zO-dHD" id="Ywz-vz-edA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTn-nI-9d5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="95"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background.png" width="375" height="812"/>
+        <image name="minus" catalog="system" width="128" height="24"/>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

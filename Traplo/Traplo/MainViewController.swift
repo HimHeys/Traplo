@@ -10,15 +10,17 @@ import KakaoSDKUser
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var backGroundBtn: UIButton!
     @IBOutlet weak var btnSignIn: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        backGroundBtn.layer.cornerRadius = 40
         btnSignIn.layer.borderColor = UIColor.white.cgColor
         btnSignIn.layer.borderWidth = 2
-        btnSignIn.layer.cornerRadius = 10
+        btnSignIn.layer.cornerRadius = 20
 
        
 
@@ -30,7 +32,9 @@ class MainViewController: UIViewController {
 //        vcName?.modalPresentationStyle = .overCurrentContext
 //        self.present(vcName!, animated: true, completion: nil)
 //    }
-//
+
+    
+    // 카카오로 이용하기 버튼 함수
     @IBAction func onKakaoLoginByAppTouched(_ sender: Any) {
      // 카카오톡 설치 여부 확인
         if (UserApi.isKakaoTalkLoginAvailable()) {

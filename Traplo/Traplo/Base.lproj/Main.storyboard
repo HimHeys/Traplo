@@ -19,12 +19,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="wr4-M8-1Ik">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44L-Wv-Mi1">
+                                <rect key="frame" x="0.0" y="544" width="414" height="352"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EB-mh-BO4">
-                                <rect key="frame" x="20" y="594" width="374" height="40"/>
+                                <rect key="frame" x="30" y="574" width="354" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="lcG-i3-ha5"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="카카오로 이용하기">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -36,16 +41,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9EB-mh-BO4" secondAttribute="trailing" constant="20" id="4S8-n1-OHO"/>
+                            <constraint firstAttribute="bottom" secondItem="44L-Wv-Mi1" secondAttribute="bottom" id="Cxa-yP-xvy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wr4-M8-1Ik" secondAttribute="trailing" id="MGX-eG-YoE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9EB-mh-BO4" secondAttribute="bottom" constant="228" id="PoY-mT-cKW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="44L-Wv-Mi1" secondAttribute="trailing" id="OMk-ym-6ku"/>
                             <constraint firstAttribute="top" secondItem="wr4-M8-1Ik" secondAttribute="top" id="Sey-l7-mCT"/>
                             <constraint firstItem="wr4-M8-1Ik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zy7-ry-ZZL"/>
                             <constraint firstItem="wr4-M8-1Ik" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="azN-AH-bkP"/>
-                            <constraint firstItem="9EB-mh-BO4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qtz-tc-8Wb"/>
+                            <constraint firstItem="44L-Wv-Mi1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="eoy-dF-BwB"/>
+                            <constraint firstItem="44L-Wv-Mi1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nhd-SK-80Z"/>
+                            <constraint firstItem="9EB-mh-BO4" firstAttribute="leading" secondItem="44L-Wv-Mi1" secondAttribute="leading" constant="30" id="r0M-Wy-ESg"/>
+                            <constraint firstItem="9EB-mh-BO4" firstAttribute="trailing" secondItem="44L-Wv-Mi1" secondAttribute="trailing" constant="-30" id="rp4-dd-9OE"/>
+                            <constraint firstItem="9EB-mh-BO4" firstAttribute="top" secondItem="44L-Wv-Mi1" secondAttribute="top" constant="30" id="tFR-Vb-aqD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backGroundBtn" destination="44L-Wv-Mi1" id="3QS-Dw-X68"/>
                         <outlet property="btnSignIn" destination="9EB-mh-BO4" id="ss8-eG-RlQ"/>
                     </connections>
                 </viewController>

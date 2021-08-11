@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187FF3CC1DD02EAA210ADD0F /* Pods_Traplo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBE5F77A8850052FEFE89C3 /* Pods_Traplo.framework */; };
 		3F14D36026C112E600F27B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D35F26C112E600F27B1E /* AppDelegate.swift */; };
 		3F14D36226C112E600F27B1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D36126C112E600F27B1E /* SceneDelegate.swift */; };
 		3F14D36426C112E600F27B1E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D36326C112E600F27B1E /* MainViewController.swift */; };
@@ -17,6 +18,8 @@
 		3F14D38226C112E700F27B1E /* TraploUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D38126C112E700F27B1E /* TraploUITests.swift */; };
 		3F14D39026C2B9D900F27B1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D38F26C2B9D900F27B1E /* LoginViewController.swift */; };
 		3F14D39526C2E25400F27B1E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F14D39426C2E25400F27B1E /* background.png */; };
+		560A8F2AA54DFC9BFA0BAF0C /* Pods_Traplo_TraploUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */; };
+		E93A6339A6423BEF26C67141 /* Pods_TraploTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A2A59D1BDDD34ACE87083BE /* Pods-TraploTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraploTests.debug.xcconfig"; path = "Target Support Files/Pods-TraploTests/Pods-TraploTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Traplo_TraploUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F14D35C26C112E600F27B1E /* Traplo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traplo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F14D35F26C112E600F27B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F14D36126C112E600F27B1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +58,13 @@
 		3F14D38326C112E700F27B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F14D38F26C2B9D900F27B1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F14D39426C2E25400F27B1E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../../background.png; sourceTree = "<group>"; };
+		4734760EF9F75B9406EC99C1 /* Pods-Traplo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.release.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.release.xcconfig"; sourceTree = "<group>"; };
+		79C038F6126298E0A9A3B49D /* Pods-Traplo-TraploUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo-TraploUITests.debug.xcconfig"; path = "Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90B3C4135A860B57AD5D74CE /* Pods-Traplo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.debug.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.debug.xcconfig"; sourceTree = "<group>"; };
+		A9F22910B5AC3C656B6B9630 /* Pods-TraploTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraploTests.release.xcconfig"; path = "Target Support Files/Pods-TraploTests/Pods-TraploTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB1E6414871480C8A55A7416 /* Pods-Traplo-TraploUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo-TraploUITests.release.xcconfig"; path = "Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DCBE5F77A8850052FEFE89C3 /* Pods_Traplo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Traplo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraploTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187FF3CC1DD02EAA210ADD0F /* Pods_Traplo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93A6339A6423BEF26C67141 /* Pods_TraploTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560A8F2AA54DFC9BFA0BAF0C /* Pods_Traplo_TraploUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,8 @@
 				3F14D37526C112E700F27B1E /* TraploTests */,
 				3F14D38026C112E700F27B1E /* TraploUITests */,
 				3F14D35D26C112E600F27B1E /* Products */,
+				703796A0449277157014CE35 /* Pods */,
+				56837C0F2FDAD0FBB24F13F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +159,29 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		56837C0F2FDAD0FBB24F13F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCBE5F77A8850052FEFE89C3 /* Pods_Traplo.framework */,
+				2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */,
+				EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		703796A0449277157014CE35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90B3C4135A860B57AD5D74CE /* Pods-Traplo.debug.xcconfig */,
+				4734760EF9F75B9406EC99C1 /* Pods-Traplo.release.xcconfig */,
+				79C038F6126298E0A9A3B49D /* Pods-Traplo-TraploUITests.debug.xcconfig */,
+				CB1E6414871480C8A55A7416 /* Pods-Traplo-TraploUITests.release.xcconfig */,
+				1A2A59D1BDDD34ACE87083BE /* Pods-TraploTests.debug.xcconfig */,
+				A9F22910B5AC3C656B6B9630 /* Pods-TraploTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F14D38626C112E700F27B1E /* Build configuration list for PBXNativeTarget "Traplo" */;
 			buildPhases = (
+				47CC88F1C7FD89016D922F53 /* [CP] Check Pods Manifest.lock */,
 				3F14D35826C112E600F27B1E /* Sources */,
 				3F14D35926C112E600F27B1E /* Frameworks */,
 				3F14D35A26C112E600F27B1E /* Resources */,
+				949EA8EEA85FADF9AC39A0A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F14D38926C112E700F27B1E /* Build configuration list for PBXNativeTarget "TraploTests" */;
 			buildPhases = (
+				18535EE28E81C2A454AE07E4 /* [CP] Check Pods Manifest.lock */,
 				3F14D36E26C112E700F27B1E /* Sources */,
 				3F14D36F26C112E700F27B1E /* Frameworks */,
 				3F14D37026C112E700F27B1E /* Resources */,
@@ -184,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F14D38C26C112E700F27B1E /* Build configuration list for PBXNativeTarget "TraploUITests" */;
 			buildPhases = (
+				A77D6FBE976AB3212843E942 /* [CP] Check Pods Manifest.lock */,
 				3F14D37926C112E700F27B1E /* Sources */,
 				3F14D37A26C112E700F27B1E /* Frameworks */,
 				3F14D37B26C112E700F27B1E /* Resources */,
+				AE0F8F1861C4B576160017BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +312,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18535EE28E81C2A454AE07E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TraploTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47CC88F1C7FD89016D922F53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Traplo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		949EA8EEA85FADF9AC39A0A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo/Pods-Traplo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo/Pods-Traplo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Traplo/Pods-Traplo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A77D6FBE976AB3212843E942 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Traplo-TraploUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0F8F1861C4B576160017BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F14D35826C112E600F27B1E /* Sources */ = {
@@ -449,6 +597,7 @@
 		};
 		3F14D38726C112E700F27B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B3C4135A860B57AD5D74CE /* Pods-Traplo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,6 +616,7 @@
 		};
 		3F14D38826C112E700F27B1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4734760EF9F75B9406EC99C1 /* Pods-Traplo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -485,6 +635,7 @@
 		};
 		3F14D38A26C112E700F27B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2A59D1BDDD34ACE87083BE /* Pods-TraploTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +657,7 @@
 		};
 		3F14D38B26C112E700F27B1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F22910B5AC3C656B6B9630 /* Pods-TraploTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +679,7 @@
 		};
 		3F14D38D26C112E700F27B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C038F6126298E0A9A3B49D /* Pods-Traplo-TraploUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +699,7 @@
 		};
 		3F14D38E26C112E700F27B1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1E6414871480C8A55A7416 /* Pods-Traplo-TraploUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

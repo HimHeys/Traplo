@@ -87,6 +87,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="구글로 이용하기"/>
+                                <connections>
+                                    <action selector="signInSender:" destination="DZz-M8-PZX" eventType="touchUpInside" id="wsx-uP-vNH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AmF-M5-0eR"/>

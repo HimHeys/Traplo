@@ -7,18 +7,47 @@
 
 import UIKit
 import KakaoSDKCommon
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        // init 카카오로그인
         KakaoSDKCommon.initSDK(appKey: "93a0755257e0b57cf8ed85ffff2e5ba2")
+        
+        // 구글 로그인 상태 자동 복원
+        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+            if error != nil || user == nil {
+              // Show the app's signed-out state.
+            } else {
+              // Show the app's signed-in state.
+            }
+          }
         
         return true
     }
+    
+    //구글 로그인
+    func application(
+      _ app: UIApplication,
+      open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+    ) -> Bool {
+      var handled: Bool
+
+      handled = GIDSignIn.sharedInstance.handle(url)
+      if handled {
+        return true
+      }
+
+      // Handle other custom URL types.
+
+      // If not handled by this app, return false.
+      return false
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -36,4 +65,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 

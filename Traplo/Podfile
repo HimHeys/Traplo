@@ -6,6 +6,7 @@ target 'Traplo' do
   use_frameworks!
 
 pod 'KakaoSDK'
+pod 'GoogleSignIn'
 
   # Pods for Traplo
 

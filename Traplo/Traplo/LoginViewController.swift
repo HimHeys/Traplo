@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import KakaoSDKAuth
 import KakaoSDKUser
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -18,10 +19,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnGoogleLogIn: UIButton!
     @IBOutlet weak var btnNaverLogIn: UIButton!
     
+    let signInConfig = GIDConfiguration.init(clientID: "1087611763983-rm0g3b1ensfk4b34hejfjrdoq4gjcqtk.apps.googleusercontent.com")
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+    
         backGroundBtn.layer.cornerRadius = 40
         
         btnKakaoLogIn.layer.borderColor = UIColor.white.cgColor
@@ -38,6 +41,17 @@ class LoginViewController: UIViewController {
         
         
     }
+
+    
+    @IBAction func signIn(sender: Any) {
+        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
+        guard error == nil else { return }
+
+        // If sign in succeeded, display the app's main content View.
+      }
+    }
+   
+
     // 카카오로 이용하기 버튼 함수
     @IBAction func onKakaoLoginByAppTouched(_ sender: Any) {
      // 카카오톡 설치 여부 확인

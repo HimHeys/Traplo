@@ -8,6 +8,7 @@
 import UIKit
 import KakaoSDKCommon
 import GoogleSignIn
+import NaverThirdPartyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,6 +28,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
           }
         
+        // 네이버 로그인
+        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
+            
+            // 네이버 앱으로 인증하는 방식을 활성화
+            instance?.isNaverAppOauthEnable = true
+            
+            // SafariViewController에서 인증하는 방식을 활성화
+            instance?.isInAppOauthEnable = true
+            
+            // 인증 화면을 iPhone의 세로 모드에서만 사용하기
+            instance?.isOnlyPortraitSupportedInIphone()
+        
+            // 애플리케이션을 등록할 때 입력한 URL Scheme
+            instance?.serviceUrlScheme = kServiceAppUrlScheme
+            // 애플리케이션 등록 후 발급받은 클라이언트 아이디
+            instance?.consumerKey = kConsumerKey
+            // 애플리케이션 등록 후 발급받은 클라이언트 시크릿
+            instance?.consumerSecret = kConsumerSecret
+            // 애플리케이션 이름
+            instance?.appName = kServiceAppName
+        
         return true
     }
     
@@ -40,15 +62,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       handled = GIDSignIn.sharedInstance.handle(url)
       if handled {
         return true
-      }
-
+      }else {
       // Handle other custom URL types.
-
+        NaverThirdPartyLoginConnection.getSharedInstance()?.application(app, open: url, options: options)
+        
+        return true
+      }
       // If not handled by this app, return false.
       return false
     }
     
-
+   
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

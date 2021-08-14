@@ -77,6 +77,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="네이버로 이용하기"/>
+                                <connections>
+                                    <action selector="onNaverLoginByAppTouched:" destination="DZz-M8-PZX" eventType="touchUpInside" id="uBu-Ne-Pqp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89G-rd-jLs">
                                 <rect key="frame" x="30" y="740" width="354" height="46"/>

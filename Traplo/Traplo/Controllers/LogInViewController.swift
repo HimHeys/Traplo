@@ -48,6 +48,18 @@ class LoginViewController: UIViewController {
         btnNaverLogIn.layer.borderWidth = 2
         btnNaverLogIn.layer.cornerRadius = 20
         
+    
+    }
+    
+    // 임시 코드 !!
+    // -> 로그인 되어야 화면 전환 가능하게 구현해야한다!
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let sb = UIStoryboard(name: "PloggingCourse", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "SearchCourseViewController") as! SearchCourseViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
         
     }
 
@@ -101,7 +113,7 @@ class LoginViewController: UIViewController {
       guard let accessToken = loginInstance?.accessToken else { return }
       let urlStr = "https://openapi.naver.com/v1/nid/me"
       let url = URL(string: urlStr)!
-//
+
 //      let authorization = "\(tokenType) \(accessToken)"
 //
 //      let req = Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization": authorization])

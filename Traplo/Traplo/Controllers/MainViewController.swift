@@ -15,10 +15,12 @@ class MainViewController: UIViewController {
          }
 
     override func viewDidAppear(_ animated: Bool) {
+        
         let vcName = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
         vcName?.modalPresentationStyle = .overFullScreen
         vcName?.modalPresentationStyle = .overCurrentContext
         self.present(vcName!, animated: true, completion: nil)
+        
     }
     
 }

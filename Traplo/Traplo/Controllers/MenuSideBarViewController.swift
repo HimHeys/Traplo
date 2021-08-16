@@ -7,14 +7,14 @@
 
 import UIKit
 
-class SearchCourseUnderBoxViewController: UIViewController {
+class MenuSideBarViewController: UIViewController {
 
     @IBOutlet weak var SearchCourseUnderBox: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SearchCourseUnderBox.layer.cornerRadius = 40
+      //  SearchCourseUnderBox.layer.cornerRadius = 40
 
     }
     

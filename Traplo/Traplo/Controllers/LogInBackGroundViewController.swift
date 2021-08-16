@@ -8,7 +8,7 @@
 import UIKit
 import KakaoSDKUser
 
-class MainViewController: UIViewController {
+class LogInBackGroundViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

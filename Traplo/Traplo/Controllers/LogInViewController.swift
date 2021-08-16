@@ -55,8 +55,8 @@ class LoginViewController: UIViewController {
     // -> 로그인 되어야 화면 전환 가능하게 구현해야한다!
     override func viewDidAppear(_ animated: Bool) {
         
-        let sb = UIStoryboard(name: "PloggingCourse", bundle: nil)
-        let vc = sb.instantiateViewController(identifier: "SearchCourseViewController") as! SearchCourseViewController
+        let sb = UIStoryboard(name: "Activity", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "RecommendActivityViewController") as! RecommendActivityViewController
         vc.modalPresentationStyle = .fullScreen
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)

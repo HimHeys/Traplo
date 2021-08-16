@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SearchCourseViewController : UIViewController {
+class RecommendActivityViewController : UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var topDesignView: UIView!
@@ -37,10 +37,16 @@ class SearchCourseViewController : UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+       
+    }
+    
+    @IBAction func onMenuBtnTouched(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SearchCourseUnderBoxViewController")
         vc?.modalPresentationStyle = .overFullScreen
         vc?.modalPresentationStyle = .overCurrentContext
+        vc?.modalTransitionStyle = .crossDissolve
         self.present(vc!, animated: true, completion: nil)
         
     }
+    
 }

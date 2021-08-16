@@ -111,7 +111,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="searchBar" destination="T82-4P-Qoi" id="BqB-H9-7aA"/>
+                        <outlet property="searchBar" destination="T82-4P-Qoi" id="uA1-fb-8Cw"/>
                         <outlet property="topDesignLayoutView" destination="Krl-Se-plN" id="u5F-pc-DC1"/>
                         <outlet property="topDesignView" destination="Fa7-lD-2aL" id="6MC-EM-z4d"/>
                     </connections>

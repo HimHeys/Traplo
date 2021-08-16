@@ -177,9 +177,8 @@
 		3F440C0626C8F9EB00B641F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F440C0A26CA4C4800B641F7 /* LogIn */,
 				3F440C0326C8E87900B641F7 /* RecommendActivityViewController.swift */,
-				3F14D36326C112E600F27B1E /* LogInBackGroundViewController.swift */,
-				3F619D7B26C41545000410FE /* LogInViewController.swift */,
 				3F440C0826C90A9300B641F7 /* MenuSideBarViewController.swift */,
 			);
 			path = Controllers;
@@ -193,6 +192,15 @@
 				3F440C0126C8E02900B641F7 /* Activity.storyboard */,
 			);
 			path = "Views(Storyboard)";
+			sourceTree = "<group>";
+		};
+		3F440C0A26CA4C4800B641F7 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				3F14D36326C112E600F27B1E /* LogInBackGroundViewController.swift */,
+				3F619D7B26C41545000410FE /* LogInViewController.swift */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 		56837C0F2FDAD0FBB24F13F1 /* Frameworks */ = {

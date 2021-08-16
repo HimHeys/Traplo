@@ -17,45 +17,74 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fa7-lD-2aL">
-                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="시/구 를 검색하세요" translatesAutoresizingMaskIntoConstraints="NO" id="T82-4P-Qoi">
-                                        <rect key="frame" x="20" y="51" width="374" height="51"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <scopeButtonTitles>
-                                            <string>Title</string>
-                                            <string>Title</string>
-                                        </scopeButtonTitles>
-                                    </searchBar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 플로깅 코스 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7K-zQ-nCR">
-                                        <rect key="frame" x="20" y="10" width="374" height="36"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krl-Se-plN">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAPLO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hix-j4-1gb">
+                                                <rect key="frame" x="54" y="11.5" width="97.5" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzQ-Mo-qRv">
+                                                <rect key="frame" x="20" y="16" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="cgz-9A-M5k"/>
+                                                    <constraint firstAttribute="height" constant="24" id="f68-Pi-ul3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="line.horizontal.3" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    </preferredSymbolConfiguration>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="SzQ-Mo-qRv" firstAttribute="leading" secondItem="Krl-Se-plN" secondAttribute="leading" constant="20" id="HlW-zp-Msd"/>
+                                            <constraint firstItem="SzQ-Mo-qRv" firstAttribute="centerY" secondItem="Krl-Se-plN" secondAttribute="centerY" id="MAi-oc-Wdi"/>
+                                            <constraint firstItem="hix-j4-1gb" firstAttribute="centerY" secondItem="Krl-Se-plN" secondAttribute="centerY" id="wiQ-eV-Px7"/>
+                                            <constraint firstItem="hix-j4-1gb" firstAttribute="leading" secondItem="SzQ-Mo-qRv" secondAttribute="trailing" constant="10" id="xEP-OG-reS"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="3Yq-iO-kBv"/>
-                                    <constraint firstAttribute="trailing" secondItem="Q7K-zQ-nCR" secondAttribute="trailing" constant="20" id="5dN-5N-KZ3"/>
-                                    <constraint firstItem="Q7K-zQ-nCR" firstAttribute="top" secondItem="Fa7-lD-2aL" secondAttribute="top" constant="10" id="LYW-np-wHa"/>
-                                    <constraint firstItem="Q7K-zQ-nCR" firstAttribute="leading" secondItem="Fa7-lD-2aL" secondAttribute="leading" constant="20" id="Mjb-OW-uZU"/>
-                                    <constraint firstItem="T82-4P-Qoi" firstAttribute="top" secondItem="Q7K-zQ-nCR" secondAttribute="bottom" constant="5" id="bxV-Fm-P4X"/>
-                                    <constraint firstItem="T82-4P-Qoi" firstAttribute="leading" secondItem="Fa7-lD-2aL" secondAttribute="leading" constant="20" id="vwF-RC-bcb"/>
-                                    <constraint firstAttribute="trailing" secondItem="T82-4P-Qoi" secondAttribute="trailing" constant="20" id="wQX-PA-9HI"/>
+                                    <constraint firstAttribute="height" constant="100" id="3Yq-iO-kBv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Krl-Se-plN" secondAttribute="bottom" id="UIj-Gk-cVB"/>
                                 </constraints>
                             </view>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="시/구 를 검색하세요" translatesAutoresizingMaskIntoConstraints="NO" id="T82-4P-Qoi">
+                                <rect key="frame" x="10" y="110" width="394" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Krl-Se-plN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1c8-J8-whI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="T82-4P-Qoi" secondAttribute="trailing" constant="10" id="2Dk-Hl-r9Y"/>
+                            <constraint firstItem="T82-4P-Qoi" firstAttribute="top" secondItem="Fa7-lD-2aL" secondAttribute="bottom" constant="10" id="EVp-Y8-1Uy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fa7-lD-2aL" secondAttribute="trailing" id="SUe-c1-YRP"/>
-                            <constraint firstItem="Fa7-lD-2aL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Wqw-jx-7he"/>
+                            <constraint firstItem="Fa7-lD-2aL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Wqw-jx-7he"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Krl-Se-plN" secondAttribute="trailing" id="qBS-ZJ-V7v"/>
                             <constraint firstItem="Fa7-lD-2aL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vYK-qJ-4gZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="Krl-Se-plN" secondAttribute="top" id="wUD-2q-VB2"/>
+                            <constraint firstItem="T82-4P-Qoi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="yi1-JP-g6o"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="T82-4P-Qoi" id="BqB-H9-7aA"/>
+                        <outlet property="topDesignLayoutView" destination="Krl-Se-plN" id="u5F-pc-DC1"/>
+                        <outlet property="topDesignView" destination="Fa7-lD-2aL" id="6MC-EM-z4d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,6 +126,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,7 +9,15 @@ import Foundation
 import UIKit
 
 class SearchCourseViewController : UIViewController {
+    
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var topDesignView: UIView!
+    @IBOutlet weak var topDesignLayoutView: UIView!
+    
+    var gradientLayer: CAGradientLayer!
+    
+    let topDesignColor1 = UIColor(named: "Color2")?.cgColor
+    let topDesignColor2 = UIColor(named: "Color1")?.cgColor
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +25,15 @@ class SearchCourseViewController : UIViewController {
         // layout
         searchBar.heightAnchor.constraint(equalToConstant: 44).isActive = true
         
+        // 상단 그라데이션 디자인
+        self.gradientLayer = CAGradientLayer()
+        self.gradientLayer.frame = topDesignView.bounds
+        self.gradientLayer.colors = [topDesignColor1 as Any,topDesignColor2 as Any]
+        self.gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        self.gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        self.topDesignView.layer.addSublayer(self.gradientLayer)
+        
+        self.topDesignView.bringSubviewToFront(topDesignLayoutView)
     }
     
     override func viewDidAppear(_ animated: Bool) {

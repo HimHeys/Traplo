@@ -10,7 +10,6 @@ import UIKit
 
 class RecommendActivityViewController : UIViewController {
     
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var topDesignView: UIView!
     @IBOutlet weak var topDesignLayoutView: UIView!
     
@@ -48,5 +47,13 @@ class RecommendActivityViewController : UIViewController {
         self.present(vc!, animated: true, completion: nil)
         
     }
+    
+    @IBAction func presentReviews(_ sender: Any) {
+        let sb = UIStoryboard(name: "Reviews", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ReviewDetailsViewController")
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
 }

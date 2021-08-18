@@ -23,6 +23,8 @@
 		3F440C0C26CAC95800B641F7 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F440C0B26CAC95800B641F7 /* user.png */; };
 		3F619D7A26C3D26D000410FE /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 3F619D7926C3D26D000410FE /* AppIcon.appiconset */; };
 		3F619D7C26C41545000410FE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F619D7B26C41545000410FE /* LogInViewController.swift */; };
+		3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F66718226CBA00900BA21D1 /* Reviews.storyboard */; };
+		3F66718526CBA03700BA21D1 /* ReviewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66718426CBA03700BA21D1 /* ReviewDetailsViewController.swift */; };
 		560A8F2AA54DFC9BFA0BAF0C /* Pods_Traplo_TraploUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */; };
 		E93A6339A6423BEF26C67141 /* Pods_TraploTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		3F440C0B26CAC95800B641F7 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		3F619D7926C3D26D000410FE /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		3F619D7B26C41545000410FE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3F66718226CBA00900BA21D1 /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
+		3F66718426CBA03700BA21D1 /* ReviewDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailsViewController.swift; sourceTree = "<group>"; };
 		4734760EF9F75B9406EC99C1 /* Pods-Traplo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.release.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.release.xcconfig"; sourceTree = "<group>"; };
 		79C038F6126298E0A9A3B49D /* Pods-Traplo-TraploUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo-TraploUITests.debug.xcconfig"; path = "Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90B3C4135A860B57AD5D74CE /* Pods-Traplo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.debug.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				3F440C0A26CA4C4800B641F7 /* LogIn */,
 				3F440C0326C8E87900B641F7 /* RecommendActivityViewController.swift */,
 				3F440C0826C90A9300B641F7 /* MenuSideBarViewController.swift */,
+				3F66718426CBA03700BA21D1 /* ReviewDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				3F14D36A26C112E700F27B1E /* LaunchScreen.storyboard */,
 				3F14D36526C112E600F27B1E /* LogIn.storyboard */,
 				3F440C0126C8E02900B641F7 /* Activity.storyboard */,
+				3F66718226CBA00900BA21D1 /* Reviews.storyboard */,
 			);
 			path = "Views(Storyboard)";
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				3F14D36926C112E700F27B1E /* Assets.xcassets in Resources */,
 				3F440C0C26CAC95800B641F7 /* user.png in Resources */,
 				3F619D7A26C3D26D000410FE /* AppIcon.appiconset in Resources */,
+				3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */,
 				3F14D36726C112E600F27B1E /* LogIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +481,7 @@
 				3F440C0926C90A9300B641F7 /* MenuSideBarViewController.swift in Sources */,
 				3F440C0426C8E87900B641F7 /* RecommendActivityViewController.swift in Sources */,
 				3F619D7C26C41545000410FE /* LogInViewController.swift in Sources */,
+				3F66718526CBA03700BA21D1 /* ReviewDetailsViewController.swift in Sources */,
 				3F14D36426C112E600F27B1E /* LogInBackGroundViewController.swift in Sources */,
 				3F14D36026C112E600F27B1E /* AppDelegate.swift in Sources */,
 				3F14D36226C112E600F27B1E /* SceneDelegate.swift in Sources */,

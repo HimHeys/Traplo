@@ -122,11 +122,20 @@
                                     <constraint firstItem="rd6-sD-vNy" firstAttribute="centerY" secondItem="Xj4-Bb-qZS" secondAttribute="centerY" id="tg8-nq-8iV"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33i-jI-gzh">
+                                <rect key="frame" x="134.5" y="489" width="145" height="30"/>
+                                <state key="normal" title="리뷰화면이동(임시 버튼)"/>
+                                <connections>
+                                    <action selector="presentReviews:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zYf-bC-doC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Krl-Se-plN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1c8-J8-whI"/>
+                            <constraint firstItem="33i-jI-gzh" firstAttribute="centerY" secondItem="7CA-5v-gHW" secondAttribute="centerY" id="2pQ-Gf-lyw"/>
+                            <constraint firstItem="33i-jI-gzh" firstAttribute="centerX" secondItem="7CA-5v-gHW" secondAttribute="centerX" id="Es3-nO-2va"/>
                             <constraint firstItem="7CA-5v-gHW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LWt-LS-X3T"/>
                             <constraint firstItem="7CA-5v-gHW" firstAttribute="top" secondItem="Xj4-Bb-qZS" secondAttribute="bottom" constant="-4" id="LeT-qA-PVq"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7CA-5v-gHW" secondAttribute="bottom" id="Oqt-mK-wrj"/>
@@ -148,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="84"/>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
         </scene>
         <!--Menu Side Bar View Controller-->
         <scene sceneID="XHz-ub-znp">
@@ -186,7 +195,7 @@
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="user.png" width="27" height="27"/>
         <namedColor name="Color2">
-            <color red="0.47450980392156861" green="0.7803921568627451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47499999403953552" green="0.77999997138977051" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

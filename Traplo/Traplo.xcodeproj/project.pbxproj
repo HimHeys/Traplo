@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		3F619D7C26C41545000410FE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F619D7B26C41545000410FE /* LogInViewController.swift */; };
 		3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F66718226CBA00900BA21D1 /* Reviews.storyboard */; };
 		3F66718526CBA03700BA21D1 /* ReviewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66718426CBA03700BA21D1 /* ReviewDetailsViewController.swift */; };
+		3F66718826CE7CD500BA21D1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 3F66718726CE7CD500BA21D1 /* SwiftPackageProductDependency */; };
 		560A8F2AA54DFC9BFA0BAF0C /* Pods_Traplo_TraploUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */; };
 		E93A6339A6423BEF26C67141 /* Pods_TraploTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F66718826CE7CD500BA21D1 /* BuildFile in Frameworks */,
 				187FF3CC1DD02EAA210ADD0F /* Pods_Traplo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,12 +249,16 @@
 				3F14D35926C112E600F27B1E /* Frameworks */,
 				3F14D35A26C112E600F27B1E /* Resources */,
 				949EA8EEA85FADF9AC39A0A5 /* [CP] Embed Pods Frameworks */,
+				53590B08B822C8FEC59DF9E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Traplo;
+			packageProductDependencies = (
+				3F66718726CE7CD500BA21D1 /* SwiftPackageProductDependency */,
+			);
 			productName = Traplo;
 			productReference = 3F14D35C26C112E600F27B1E /* Traplo.app */;
 			productType = "com.apple.product-type.application";
@@ -285,6 +291,7 @@
 				3F14D37A26C112E700F27B1E /* Frameworks */,
 				3F14D37B26C112E700F27B1E /* Resources */,
 				AE0F8F1861C4B576160017BC /* [CP] Embed Pods Frameworks */,
+				8804513978E6203A1DFA25B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,6 +334,9 @@
 				Base,
 			);
 			mainGroup = 3F14D35326C112E600F27B1E;
+			packageReferences = (
+				3F66718626CE7CD500BA21D1 /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = 3F14D35D26C112E600F27B1E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -413,6 +423,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53590B08B822C8FEC59DF9E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo/Pods-Traplo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo/Pods-Traplo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Traplo/Pods-Traplo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8804513978E6203A1DFA25B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		949EA8EEA85FADF9AC39A0A5 /* [CP] Embed Pods Frameworks */ = {
@@ -819,6 +863,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F66718626CE7CD500BA21D1 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F66718726CE7CD500BA21D1 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F66718626CE7CD500BA21D1 /* RemoteSwiftPackageReference */;
+			productName = Cosmos;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F14D35426C112E600F27B1E /* Project object */;
 }

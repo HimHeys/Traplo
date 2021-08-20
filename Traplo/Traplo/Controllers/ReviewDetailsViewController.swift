@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class ReviewDetailsViewController: UIViewController {
 
     @IBOutlet weak var topDesignView: UIView!
     @IBOutlet weak var topDesignLayoutView: UIView!
+    @IBOutlet weak var mapFrameView: UIView!
+    
     
     var gradientLayer: CAGradientLayer!
     
@@ -33,17 +36,27 @@ class ReviewDetailsViewController: UIViewController {
                self.topDesignView.layer.addSublayer(self.gradientLayer)
        
                self.topDesignView.bringSubviewToFront(topDesignLayoutView)
+        
+        googleMaps()
            
     }
+    
+    // Google Maps
+    func googleMaps() {
+        let camera = GMSCameraPosition.camera(withLatitude: 37.566508, longitude: 126.977945, zoom: 16.0)
+        let mapView = GMSMapView.map(withFrame: self.mapFrameView.bounds, camera: camera)
+              self.mapFrameView.addSubview(mapView)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+              // Creates a marker in the center of the map.
+              let marker = GMSMarker()
+              marker.position = CLLocationCoordinate2D(latitude: 37.566508, longitude: 126.977945)
+              marker.title = "Sydney"
+              marker.snippet = "South Korea"
+              marker.map = mapView
     }
-    */
+
+    
+    
+   
 
 }

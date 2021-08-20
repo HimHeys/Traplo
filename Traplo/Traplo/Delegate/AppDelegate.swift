@@ -9,6 +9,7 @@ import UIKit
 import KakaoSDKCommon
 import GoogleSignIn
 import NaverThirdPartyLogin
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -48,6 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             instance?.consumerSecret = kConsumerSecret
             // 애플리케이션 이름
             instance?.appName = kServiceAppName
+        
+        // Google Maps
+        GMSServices.provideAPIKey("AIzaSyD9l1nhuI-8iEzG_69Q66ltr2Ao7EJPBU4")
         
         return true
     }

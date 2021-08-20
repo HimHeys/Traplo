@@ -66,6 +66,11 @@
                                 <rect key="frame" x="0.0" y="390" width="414" height="472"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-jo-Sh4">
+                                <rect key="frame" x="40" y="290" width="334" height="200"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -73,18 +78,23 @@
                             <constraint firstItem="gzt-Vd-SEs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="89e-o7-jAj"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="Lpd-Yr-MwZ" secondAttribute="top" id="DlO-E7-Ggu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yIY-g8-1AL" secondAttribute="bottom" id="EpB-ph-7Rr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Ee-jo-Sh4" secondAttribute="trailing" constant="40" id="Kpf-RB-XK3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kyW-wT-jHK" secondAttribute="trailing" id="NWP-yb-fm7"/>
                             <constraint firstItem="yIY-g8-1AL" firstAttribute="top" secondItem="gzt-Vd-SEs" secondAttribute="bottom" id="ecE-BM-bjd"/>
                             <constraint firstItem="kyW-wT-jHK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fgd-Gf-tH0"/>
+                            <constraint firstItem="6Ee-jo-Sh4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="jp4-j9-jPR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yIY-g8-1AL" secondAttribute="trailing" id="mtx-5R-qxo"/>
+                            <constraint firstItem="6Ee-jo-Sh4" firstAttribute="bottom" secondItem="yIY-g8-1AL" secondAttribute="top" constant="100" id="nGV-Lo-FPx"/>
                             <constraint firstItem="kyW-wT-jHK" firstAttribute="bottom" secondItem="gzt-Vd-SEs" secondAttribute="top" id="nYI-KX-L6U"/>
                             <constraint firstItem="kyW-wT-jHK" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="o2X-Cq-a8y"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gzt-Vd-SEs" secondAttribute="trailing" id="uTD-qx-oLd"/>
+                            <constraint firstItem="6Ee-jo-Sh4" firstAttribute="top" secondItem="yIY-g8-1AL" secondAttribute="top" constant="-100" id="yCE-0H-7jV"/>
                             <constraint firstItem="yIY-g8-1AL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zmi-eG-hxI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapFrameView" destination="gzt-Vd-SEs" id="W74-6y-Mdj"/>
+                        <outlet property="ploggingConsole" destination="6Ee-jo-Sh4" id="15y-Jk-i9a"/>
                         <outlet property="topDesignLayoutView" destination="Lpd-Yr-MwZ" id="rcZ-gk-nCV"/>
                         <outlet property="topDesignView" destination="kyW-wT-jHK" id="fMj-kf-yvZ"/>
                     </connections>

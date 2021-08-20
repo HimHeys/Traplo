@@ -13,6 +13,7 @@ class ReviewDetailsViewController: UIViewController {
     @IBOutlet weak var topDesignView: UIView!
     @IBOutlet weak var topDesignLayoutView: UIView!
     @IBOutlet weak var mapFrameView: UIView!
+    @IBOutlet weak var ploggingConsole: UIView!
     
     
     var gradientLayer: CAGradientLayer!
@@ -37,12 +38,12 @@ class ReviewDetailsViewController: UIViewController {
        
                self.topDesignView.bringSubviewToFront(topDesignLayoutView)
         
-        googleMaps()
-           
+        setGoogleMaps()
+        setPloggingConsole()
     }
     
     // Google Maps
-    func googleMaps() {
+    func setGoogleMaps() {
         let camera = GMSCameraPosition.camera(withLatitude: 37.566508, longitude: 126.977945, zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: self.mapFrameView.bounds, camera: camera)
               self.mapFrameView.addSubview(mapView)
@@ -55,6 +56,10 @@ class ReviewDetailsViewController: UIViewController {
               marker.map = mapView
     }
 
+    func setPloggingConsole() {
+        ploggingConsole.layer.cornerRadius = 30
+        
+    }
     
     
    

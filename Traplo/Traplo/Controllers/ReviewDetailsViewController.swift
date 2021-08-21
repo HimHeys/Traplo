@@ -24,8 +24,10 @@ class ReviewDetailsViewController: UIViewController {
     @IBOutlet weak var mapFrameViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var ploggingConsoleUpperConstraint:NSLayoutConstraint!
     @IBOutlet weak var ploggingConsoleUnderConstraint:NSLayoutConstraint!
+    @IBOutlet weak var collectionViewUpperConstraint: NSLayoutConstraint!
+    @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
     
-    
+    //gradient
     var gradientLayer: CAGradientLayer!
     
     let topDesignColor1 = UIColor(named: "Color2")?.cgColor
@@ -37,8 +39,9 @@ class ReviewDetailsViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-       // setUI() 로 옮기면 안됨!! <layout배열 꼬임>
-       setGoogleMaps()
+      
+        setGoogleMaps() // setUI() 로 옮기면 안됨!! <layout배열 꼬임>
+        setTopGradationDesign()
     }
 
     func setUI() {
@@ -46,13 +49,17 @@ class ReviewDetailsViewController: UIViewController {
         let viewHeight = view.bounds.height
         let topDesignViewHeight : CGFloat = viewHeight/10
         let mapFrameViewHeight : CGFloat = (viewHeight-topDesignViewHeight)/3
+        let collectionUpperConstraint = topDesignViewHeight + 20
+        let collectionRectCellSize = viewHeight/6
         
-        topDesignViewHeightConstraint.constant = viewHeight - topDesignViewHeight
+        
+        topDesignViewHeightConstraint.constant =  -(topDesignViewHeight)
         mapFrameViewHeightConstraint.constant = -(mapFrameViewHeight*1.5)
         ploggingConsoleUpperConstraint.constant = (-topDesignViewHeight)
         ploggingConsoleUnderConstraint.constant = topDesignViewHeight
+        collectionViewUpperConstraint.constant = collectionUpperConstraint
+        collectionViewHeightConstraint.constant = -(collectionUpperConstraint+collectionRectCellSize)
         
-        setTopGradationDesign()
         setPloggingConsole()
         setCosmosRate()
     }

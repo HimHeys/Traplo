@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Seu-iw-us7">
-                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="782"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnT-gK-qKa">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -84,11 +84,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="리뷰 글 입력" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="boG-TL-X0j">
-                                                        <rect key="frame" x="20" y="386" width="374" height="310"/>
+                                                        <rect key="frame" x="20" y="386" width="374" height="304"/>
                                                         <color key="backgroundColor" name="Color1"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="310" id="MF4-Ts-2Hf"/>
-                                                        </constraints>
                                                         <color key="textColor" systemColor="labelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -106,6 +103,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="LaO-Ox-aRK" secondAttribute="trailing" constant="30" id="LBZ-m8-Hyw"/>
                                                     <constraint firstItem="boG-TL-X0j" firstAttribute="leading" secondItem="yIY-g8-1AL" secondAttribute="leading" constant="20" id="Ul8-Ey-lY3"/>
                                                     <constraint firstItem="LaO-Ox-aRK" firstAttribute="leading" secondItem="yIY-g8-1AL" secondAttribute="leading" constant="30" id="VO7-b4-uft"/>
+                                                    <constraint firstAttribute="bottom" secondItem="boG-TL-X0j" secondAttribute="bottom" constant="10" id="WNF-J1-9eR"/>
                                                     <constraint firstItem="pSW-O6-2Ri" firstAttribute="top" secondItem="yIY-g8-1AL" secondAttribute="top" constant="120" id="XPQ-aa-Oxz"/>
                                                     <constraint firstItem="fY3-EO-9m7" firstAttribute="top" secondItem="LaO-Ox-aRK" secondAttribute="bottom" constant="15" id="Zel-wq-9qM"/>
                                                     <constraint firstAttribute="trailing" secondItem="boG-TL-X0j" secondAttribute="trailing" constant="20" id="Zxu-nB-muz"/>
@@ -148,19 +146,19 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="478-qJ-T6B"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyW-wT-jHK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpd-Yr-MwZ">
-                                        <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                                        <rect key="frame" x="0.0" y="44" width="414" height="36"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="삼성미술관 리뷰 쓰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCQ-jU-KRU">
-                                                <rect key="frame" x="136.5" y="12.5" width="141.5" height="21"/>
+                                                <rect key="frame" x="136.5" y="7.5" width="141.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SX7-Jn-xvK">
-                                                <rect key="frame" x="370" y="11" width="24" height="24"/>
+                                                <rect key="frame" x="370" y="6" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="1jc-Pp-63f"/>
                                                     <constraint firstAttribute="width" constant="24" id="77M-F5-2X1"/>
@@ -189,20 +187,22 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="kyW-wT-jHK" secondAttribute="top" constant="44" id="5g9-x2-5g6"/>
+                            <constraint firstAttribute="top" secondItem="kyW-wT-jHK" secondAttribute="top" id="5g9-x2-5g6"/>
                             <constraint firstItem="Seu-iw-us7" firstAttribute="top" secondItem="kyW-wT-jHK" secondAttribute="bottom" id="CML-Fp-YX4"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="Lpd-Yr-MwZ" secondAttribute="top" id="DlO-E7-Ggu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kyW-wT-jHK" secondAttribute="trailing" id="NWP-yb-fm7"/>
                             <constraint firstItem="kyW-wT-jHK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fgd-Gf-tH0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Seu-iw-us7" secondAttribute="trailing" id="jlB-H7-gnH"/>
                             <constraint firstItem="kyW-wT-jHK" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="o2X-Cq-a8y"/>
-                            <constraint firstAttribute="bottom" secondItem="kyW-wT-jHK" secondAttribute="bottom" constant="806" id="p12-Tt-j0J"/>
+                            <constraint firstAttribute="top" secondItem="kyW-wT-jHK" secondAttribute="bottom" constant="-80" id="p12-Tt-j0J"/>
                             <constraint firstItem="Seu-iw-us7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pEq-7M-hxg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Seu-iw-us7" secondAttribute="bottom" id="rVt-2a-Rbb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomDesignView" destination="yIY-g8-1AL" id="sjr-Ga-Dcb"/>
+                        <outlet property="collectionViewHeightConstraint" destination="mhm-Bg-HWX" id="2K4-8G-NEX"/>
+                        <outlet property="collectionViewUpperConstraint" destination="XPQ-aa-Oxz" id="MNc-aS-uaN"/>
                         <outlet property="cosmosView" destination="fY3-EO-9m7" id="798-Gy-Yo1"/>
                         <outlet property="mapFrameView" destination="gzt-Vd-SEs" id="W74-6y-Mdj"/>
                         <outlet property="mapFrameViewHeightConstraint" destination="Daw-JC-Pcn" id="1TF-1B-t11"/>

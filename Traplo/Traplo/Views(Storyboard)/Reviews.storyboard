@@ -63,11 +63,10 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pSW-O6-2Ri">
                                         <rect key="frame" x="0.0" y="120" width="414" height="140"/>
-                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="I8l-kl-gHZ"/>
                                         </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f6g-WC-ujX">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f6g-WC-ujX">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -75,7 +74,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="N97-rw-v6d">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <rect key="frame" x="0.0" y="6" width="128" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xhW-3Q-vYZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -85,7 +84,7 @@
                                         </cells>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-EO-9m7" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="97" y="270" width="220" height="40"/>
+                                        <rect key="frame" x="97" y="296" width="220" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="PlA-g8-nNM"/>
                                             <constraint firstAttribute="width" constant="220" id="ahq-Cz-9w0"/>
@@ -115,22 +114,34 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="리뷰 글 입력" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="boG-TL-X0j">
-                                        <rect key="frame" x="20" y="320" width="374" height="332"/>
+                                        <rect key="frame" x="20" y="346" width="374" height="310"/>
                                         <color key="backgroundColor" name="Color1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="310" id="MF4-Ts-2Hf"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaO-Ox-aRK">
+                                        <rect key="frame" x="30" y="280" width="354" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <color key="tintColor" systemColor="systemGray4Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="6B9-Ij-NSy"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="boG-TL-X0j" secondAttribute="trailing" constant="20" id="QgU-8O-sVA"/>
-                                    <constraint firstItem="boG-TL-X0j" firstAttribute="top" secondItem="fY3-EO-9m7" secondAttribute="bottom" constant="10" id="Y09-t4-Bc9"/>
+                                    <constraint firstItem="boG-TL-X0j" firstAttribute="leading" secondItem="yIY-g8-1AL" secondAttribute="leading" constant="20" id="Ul8-Ey-lY3"/>
+                                    <constraint firstItem="fY3-EO-9m7" firstAttribute="top" secondItem="LaO-Ox-aRK" secondAttribute="bottom" constant="15" id="Zel-wq-9qM"/>
+                                    <constraint firstAttribute="trailing" secondItem="boG-TL-X0j" secondAttribute="trailing" constant="20" id="Zxu-nB-muz"/>
+                                    <constraint firstItem="boG-TL-X0j" firstAttribute="centerX" secondItem="fY3-EO-9m7" secondAttribute="centerX" id="bnR-pO-aWJ"/>
+                                    <constraint firstItem="boG-TL-X0j" firstAttribute="top" secondItem="fY3-EO-9m7" secondAttribute="bottom" constant="10" id="fNs-Sa-hY1"/>
                                     <constraint firstItem="pSW-O6-2Ri" firstAttribute="leading" secondItem="yIY-g8-1AL" secondAttribute="leading" id="iMi-w5-oDR"/>
-                                    <constraint firstItem="boG-TL-X0j" firstAttribute="leading" secondItem="yIY-g8-1AL" secondAttribute="leading" constant="20" id="is4-Eg-p7v"/>
+                                    <constraint firstItem="LaO-Ox-aRK" firstAttribute="top" secondItem="pSW-O6-2Ri" secondAttribute="bottom" constant="20" id="koD-KR-riS"/>
                                     <constraint firstAttribute="trailing" secondItem="pSW-O6-2Ri" secondAttribute="trailing" id="lzl-xO-m4F"/>
                                     <constraint firstItem="fY3-EO-9m7" firstAttribute="centerX" secondItem="yIY-g8-1AL" secondAttribute="centerX" id="uCc-7s-Vh0"/>
-                                    <constraint firstItem="fY3-EO-9m7" firstAttribute="top" secondItem="pSW-O6-2Ri" secondAttribute="bottom" constant="10" id="yO6-0x-Mee"/>
-                                    <constraint firstAttribute="bottom" secondItem="boG-TL-X0j" secondAttribute="bottom" constant="20" id="zMR-yG-wnx"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ee-jo-Sh4">
@@ -143,6 +154,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="kyW-wT-jHK" secondAttribute="top" constant="44" id="5g9-x2-5g6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LaO-Ox-aRK" secondAttribute="trailing" constant="30" id="7f8-r0-RHG"/>
                             <constraint firstItem="gzt-Vd-SEs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="89e-o7-jAj"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="Lpd-Yr-MwZ" secondAttribute="top" id="DlO-E7-Ggu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yIY-g8-1AL" secondAttribute="bottom" id="EpB-ph-7Rr"/>
@@ -153,6 +165,7 @@
                             <constraint firstItem="yIY-g8-1AL" firstAttribute="top" secondItem="gzt-Vd-SEs" secondAttribute="bottom" id="ecE-BM-bjd"/>
                             <constraint firstItem="kyW-wT-jHK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fgd-Gf-tH0"/>
                             <constraint firstItem="6Ee-jo-Sh4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="jp4-j9-jPR"/>
+                            <constraint firstItem="LaO-Ox-aRK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="kPY-nl-Q0F"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yIY-g8-1AL" secondAttribute="trailing" id="mtx-5R-qxo"/>
                             <constraint firstItem="6Ee-jo-Sh4" firstAttribute="bottom" secondItem="gzt-Vd-SEs" secondAttribute="bottom" constant="100" id="nGV-Lo-FPx"/>
                             <constraint firstItem="kyW-wT-jHK" firstAttribute="bottom" secondItem="gzt-Vd-SEs" secondAttribute="top" id="nYI-KX-L6U"/>
@@ -191,6 +204,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

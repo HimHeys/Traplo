@@ -48,7 +48,7 @@ class ReviewDetailsViewController: UIViewController {
         let mapFrameViewHeight : CGFloat = (viewHeight-topDesignViewHeight)/3
         
         topDesignViewHeightConstraint.constant = viewHeight - topDesignViewHeight
-        mapFrameViewHeightConstraint.constant = -mapFrameViewHeight
+        mapFrameViewHeightConstraint.constant = -(mapFrameViewHeight*1.5)
         ploggingConsoleUpperConstraint.constant = (-topDesignViewHeight)
         ploggingConsoleUnderConstraint.constant = topDesignViewHeight
         

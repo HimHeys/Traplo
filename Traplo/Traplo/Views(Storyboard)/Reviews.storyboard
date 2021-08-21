@@ -35,23 +35,42 @@
                                                 <rect key="frame" x="0.0" y="300" width="414" height="700"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pSW-O6-2Ri">
-                                                        <rect key="frame" x="0.0" y="120" width="414" height="180"/>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f6g-WC-ujX">
+                                                        <rect key="frame" x="10" y="120" width="394" height="180"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f6g-WC-ujX">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="N97-rw-v6d">
-                                                                <rect key="frame" x="0.0" y="26" width="128" height="128"/>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="reviewImages" id="N97-rw-v6d" customClass="addImageCollectionViewCell" customModule="Traplo" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="26" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xhW-3Q-vYZ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f0f-zu-hD4">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="f0f-zu-hD4" firstAttribute="top" secondItem="xhW-3Q-vYZ" secondAttribute="top" id="DOU-I9-Zd7"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="f0f-zu-hD4" secondAttribute="bottom" id="gx8-3B-VEW"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="f0f-zu-hD4" secondAttribute="trailing" id="nEN-Vi-rfh"/>
+                                                                        <constraint firstItem="f0f-zu-hD4" firstAttribute="leading" secondItem="xhW-3Q-vYZ" secondAttribute="leading" id="vTp-MZ-wHq"/>
+                                                                    </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="collectionViewImageView" destination="f0f-zu-hD4" id="kHv-6N-ebg"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="Jv9-VD-Llf"/>
+                                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="1Nc-Gr-zsJ"/>
+                                                        </connections>
                                                     </collectionView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-EO-9m7" customClass="CosmosView" customModule="Cosmos">
                                                         <rect key="frame" x="97" y="336" width="220" height="40"/>
@@ -109,9 +128,9 @@
                                                     <constraint firstAttribute="trailing" secondItem="boG-TL-X0j" secondAttribute="trailing" constant="20" id="Zxu-nB-muz"/>
                                                     <constraint firstItem="boG-TL-X0j" firstAttribute="centerX" secondItem="fY3-EO-9m7" secondAttribute="centerX" id="bnR-pO-aWJ"/>
                                                     <constraint firstItem="boG-TL-X0j" firstAttribute="top" secondItem="fY3-EO-9m7" secondAttribute="bottom" constant="10" id="fNs-Sa-hY1"/>
-                                                    <constraint firstItem="pSW-O6-2Ri" firstAttribute="leading" secondItem="yIY-g8-1AL" secondAttribute="leading" id="iMi-w5-oDR"/>
+                                                    <constraint firstItem="pSW-O6-2Ri" firstAttribute="leading" secondItem="yIY-g8-1AL" secondAttribute="leading" constant="10" id="iMi-w5-oDR"/>
                                                     <constraint firstItem="LaO-Ox-aRK" firstAttribute="top" secondItem="pSW-O6-2Ri" secondAttribute="bottom" constant="20" id="koD-KR-riS"/>
-                                                    <constraint firstAttribute="trailing" secondItem="pSW-O6-2Ri" secondAttribute="trailing" id="lzl-xO-m4F"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pSW-O6-2Ri" secondAttribute="trailing" constant="10" id="lzl-xO-m4F"/>
                                                     <constraint firstAttribute="top" secondItem="pSW-O6-2Ri" secondAttribute="bottom" constant="-300" id="mhm-Bg-HWX"/>
                                                     <constraint firstItem="fY3-EO-9m7" firstAttribute="centerX" secondItem="yIY-g8-1AL" secondAttribute="centerX" id="uCc-7s-Vh0"/>
                                                 </constraints>

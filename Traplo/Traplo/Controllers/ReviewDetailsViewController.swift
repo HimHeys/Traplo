@@ -10,7 +10,7 @@ import GoogleMaps
 import Cosmos
 
 class ReviewDetailsViewController: UIViewController {
-
+    
     //view
     @IBOutlet weak var topDesignView: UIView!
     @IBOutlet weak var topDesignLayoutView: UIView!
@@ -32,6 +32,9 @@ class ReviewDetailsViewController: UIViewController {
     
     let topDesignColor1 = UIColor(named: "Color2")?.cgColor
     let topDesignColor2 = UIColor(named: "Color1")?.cgColor
+    
+    let defaultReviewImage = UIImage.init(imageLiteralResourceName: "Rectangle 58")
+    let defaultAddReviewImage = UIImage.init(imageLiteralResourceName: "Group 8")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,8 +101,47 @@ class ReviewDetailsViewController: UIViewController {
     func setCosmosRate() {
         
     }
-    
+
+}
+extension ReviewDetailsViewController : UICollectionViewDataSource {
     
    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reviewImages", for: indexPath) as? addImageCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        
+        cell.collectionViewImageView.image = defaultReviewImage
+
+
+        return cell
+    }
+    
+    
+}
+
+extension ReviewDetailsViewController : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let viewHeight = view.bounds.height
+        let collectionRectCellSize = viewHeight/6
+
+        
+        return CGSize(width: collectionRectCellSize, height: collectionRectCellSize)
+    }
+}
+
+extension ReviewDetailsViewController : UICollectionViewDelegate {
+    
+}
+
+class addImageCollectionViewCell : UICollectionViewCell {
+    @IBOutlet weak var collectionViewImageView: UIImageView!
 
 }

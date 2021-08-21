@@ -25,7 +25,9 @@
 		3F619D7C26C41545000410FE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F619D7B26C41545000410FE /* LogInViewController.swift */; };
 		3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F66718226CBA00900BA21D1 /* Reviews.storyboard */; };
 		3F66718526CBA03700BA21D1 /* ReviewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66718426CBA03700BA21D1 /* ReviewDetailsViewController.swift */; };
-		3F66718826CE7CD500BA21D1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 3F66718726CE7CD500BA21D1 /* SwiftPackageProductDependency */; };
+		3F66718826CE7CD500BA21D1 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 3F66718726CE7CD500BA21D1 /* Cosmos */; };
+		3F66718A26D144B100BA21D1 /* Rectangle 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F66718926D144B100BA21D1 /* Rectangle 58.png */; };
+		3F66718C26D144B800BA21D1 /* Group 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F66718B26D144B800BA21D1 /* Group 8.png */; };
 		560A8F2AA54DFC9BFA0BAF0C /* Pods_Traplo_TraploUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */; };
 		E93A6339A6423BEF26C67141 /* Pods_TraploTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		3F619D7B26C41545000410FE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3F66718226CBA00900BA21D1 /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
 		3F66718426CBA03700BA21D1 /* ReviewDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailsViewController.swift; sourceTree = "<group>"; };
+		3F66718926D144B100BA21D1 /* Rectangle 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 58.png"; sourceTree = "<group>"; };
+		3F66718B26D144B800BA21D1 /* Group 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 8.png"; sourceTree = "<group>"; };
 		4734760EF9F75B9406EC99C1 /* Pods-Traplo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.release.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.release.xcconfig"; sourceTree = "<group>"; };
 		79C038F6126298E0A9A3B49D /* Pods-Traplo-TraploUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo-TraploUITests.debug.xcconfig"; path = "Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90B3C4135A860B57AD5D74CE /* Pods-Traplo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.debug.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F66718826CE7CD500BA21D1 /* BuildFile in Frameworks */,
+				3F66718826CE7CD500BA21D1 /* Cosmos in Frameworks */,
 				187FF3CC1DD02EAA210ADD0F /* Pods_Traplo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +174,8 @@
 				3F14D36826C112E700F27B1E /* Assets.xcassets */,
 				3F14D39426C2E25400F27B1E /* background.png */,
 				3F440C0B26CAC95800B641F7 /* user.png */,
+				3F66718B26D144B800BA21D1 /* Group 8.png */,
+				3F66718926D144B100BA21D1 /* Rectangle 58.png */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -257,7 +263,7 @@
 			);
 			name = Traplo;
 			packageProductDependencies = (
-				3F66718726CE7CD500BA21D1 /* SwiftPackageProductDependency */,
+				3F66718726CE7CD500BA21D1 /* Cosmos */,
 			);
 			productName = Traplo;
 			productReference = 3F14D35C26C112E600F27B1E /* Traplo.app */;
@@ -335,7 +341,7 @@
 			);
 			mainGroup = 3F14D35326C112E600F27B1E;
 			packageReferences = (
-				3F66718626CE7CD500BA21D1 /* RemoteSwiftPackageReference */,
+				3F66718626CE7CD500BA21D1 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = 3F14D35D26C112E600F27B1E /* Products */;
 			projectDirPath = "";
@@ -356,9 +362,11 @@
 				3F14D36C26C112E700F27B1E /* LaunchScreen.storyboard in Resources */,
 				3F14D39526C2E25400F27B1E /* background.png in Resources */,
 				3F440C0226C8E02900B641F7 /* Activity.storyboard in Resources */,
+				3F66718C26D144B800BA21D1 /* Group 8.png in Resources */,
 				3F14D36926C112E700F27B1E /* Assets.xcassets in Resources */,
 				3F440C0C26CAC95800B641F7 /* user.png in Resources */,
 				3F619D7A26C3D26D000410FE /* AppIcon.appiconset in Resources */,
+				3F66718A26D144B100BA21D1 /* Rectangle 58.png in Resources */,
 				3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */,
 				3F14D36726C112E600F27B1E /* LogIn.storyboard in Resources */,
 			);
@@ -865,7 +873,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3F66718626CE7CD500BA21D1 /* RemoteSwiftPackageReference */ = {
+		3F66718626CE7CD500BA21D1 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
 			requirement = {
@@ -876,9 +884,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3F66718726CE7CD500BA21D1 /* SwiftPackageProductDependency */ = {
+		3F66718726CE7CD500BA21D1 /* Cosmos */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3F66718626CE7CD500BA21D1 /* RemoteSwiftPackageReference */;
+			package = 3F66718626CE7CD500BA21D1 /* XCRemoteSwiftPackageReference "Cosmos" */;
 			productName = Cosmos;
 		};
 /* End XCSwiftPackageProductDependency section */

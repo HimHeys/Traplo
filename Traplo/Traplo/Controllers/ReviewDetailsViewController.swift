@@ -26,7 +26,11 @@ class ReviewDetailsViewController: UIViewController {
     @IBOutlet weak var ploggingConsoleUnderConstraint:NSLayoutConstraint!
     @IBOutlet weak var collectionViewUpperConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var ploggingConsoleDateLabelConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ploggingConsoleDistanceLabelConstraint: NSLayoutConstraint!
     @IBOutlet weak var ploggingConsoleTimeLabelConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ploggingConsoleStartEndLabelConstraint: NSLayoutConstraint!
     
     //gradient
     var gradientLayer: CAGradientLayer!
@@ -100,8 +104,12 @@ class ReviewDetailsViewController: UIViewController {
 
     func setPloggingConsole() {
         ploggingConsole.layer.cornerRadius = 30
-        ploggingConsoleTimeLabelConstraint.constant = ploggingConsole.frame.width/2 + 30
+        let padding = ploggingConsole.bounds.width/12
         
+        ploggingConsoleDateLabelConstraint.constant = padding
+        ploggingConsoleDistanceLabelConstraint.constant = padding
+        ploggingConsoleTimeLabelConstraint.constant = ploggingConsole.bounds.width/2+padding/4
+        ploggingConsoleStartEndLabelConstraint.constant = padding
     }
     
     func setCosmosRate() {

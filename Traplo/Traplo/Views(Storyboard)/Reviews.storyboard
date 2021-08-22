@@ -329,6 +329,9 @@
                         <outlet property="mapFrameView" destination="gzt-Vd-SEs" id="W74-6y-Mdj"/>
                         <outlet property="mapFrameViewHeightConstraint" destination="Daw-JC-Pcn" id="1TF-1B-t11"/>
                         <outlet property="ploggingConsole" destination="6Ee-jo-Sh4" id="15y-Jk-i9a"/>
+                        <outlet property="ploggingConsoleDateLabelConstraint" destination="2ML-LD-8ot" id="HYi-HY-6EK"/>
+                        <outlet property="ploggingConsoleDistanceLabelConstraint" destination="nFs-Si-qe2" id="CBI-av-HfU"/>
+                        <outlet property="ploggingConsoleStartEndLabelConstraint" destination="GlN-2b-jIp" id="Dju-n8-RaW"/>
                         <outlet property="ploggingConsoleTimeLabelConstraint" destination="RNd-kb-TXa" id="hog-sz-CqD"/>
                         <outlet property="ploggingConsoleUnderConstraint" destination="eAq-Np-ASQ" id="ok5-nk-vWe"/>
                         <outlet property="ploggingConsoleUpperConstraint" destination="Rmg-yM-Z4N" id="20I-dR-kQL"/>

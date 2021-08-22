@@ -50,7 +50,7 @@ class RecommendActivityViewController : UIViewController {
     
     @IBAction func presentReviews(_ sender: Any) {
         let sb = UIStoryboard(name: "Reviews", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "ReviewDetailsViewController")
+        let vc = sb.instantiateViewController(withIdentifier: "EditReviewViewController")
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
     }

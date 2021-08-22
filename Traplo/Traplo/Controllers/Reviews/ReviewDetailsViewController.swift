@@ -9,6 +9,7 @@ import UIKit
 import GoogleMaps
 import Cosmos
 
+// 다른 사람 리뷰 상세히 보기
 class ReviewDetailsViewController: UIViewController {
     
     //view
@@ -153,7 +154,6 @@ extension ReviewDetailsViewController : UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionRectCellSize, height: collectionRectCellSize)
     }
 }
-
 // 셀 터치시
 extension ReviewDetailsViewController : UICollectionViewDelegate {
     

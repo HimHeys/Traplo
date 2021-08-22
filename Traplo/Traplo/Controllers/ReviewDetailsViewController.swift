@@ -26,15 +26,19 @@ class ReviewDetailsViewController: UIViewController {
     @IBOutlet weak var ploggingConsoleUnderConstraint:NSLayoutConstraint!
     @IBOutlet weak var collectionViewUpperConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ploggingConsoleTimeLabelConstraint: NSLayoutConstraint!
     
     //gradient
     var gradientLayer: CAGradientLayer!
     
+    //UIColor
     let topDesignColor1 = UIColor(named: "Color2")?.cgColor
     let topDesignColor2 = UIColor(named: "Color1")?.cgColor
     
+    //UIImage
     let defaultReviewImage = UIImage.init(imageLiteralResourceName: "Rectangle 58")
     let defaultAddReviewImage = UIImage.init(imageLiteralResourceName: "Group 8")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,9 +46,8 @@ class ReviewDetailsViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-      
-        setGoogleMaps() // setUI() 로 옮기면 안됨!! <layout배열 꼬임>
         setTopGradationDesign()
+        setGoogleMaps() // setUI() 로 옮기면 안됨!! <layout배열 꼬임>
     }
 
     func setUI() {
@@ -65,6 +68,7 @@ class ReviewDetailsViewController: UIViewController {
         
         setPloggingConsole()
         setCosmosRate()
+
     }
     
     // 상단 그라데이션 디자인
@@ -96,6 +100,8 @@ class ReviewDetailsViewController: UIViewController {
 
     func setPloggingConsole() {
         ploggingConsole.layer.cornerRadius = 30
+        ploggingConsoleTimeLabelConstraint.constant = ploggingConsole.frame.width/2 + 30
+        
     }
     
     func setCosmosRate() {
@@ -103,6 +109,8 @@ class ReviewDetailsViewController: UIViewController {
     }
 
 }
+
+// 셀 어떻게 보여줘?
 extension ReviewDetailsViewController : UICollectionViewDataSource {
     
    
@@ -126,6 +134,7 @@ extension ReviewDetailsViewController : UICollectionViewDataSource {
     
 }
 
+// 셀 크기
 extension ReviewDetailsViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -137,6 +146,7 @@ extension ReviewDetailsViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
+// 셀 터치시
 extension ReviewDetailsViewController : UICollectionViewDelegate {
     
 }

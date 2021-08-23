@@ -26,7 +26,6 @@ class EditReviewViewController: UIViewController {
     @IBOutlet weak var ploggingConsoleUnderConstraint:NSLayoutConstraint!
     @IBOutlet weak var collectionViewUpperConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var ploggingConsoleDateLabelConstraint: NSLayoutConstraint!
     @IBOutlet weak var ploggingConsoleDistanceLabelConstraint: NSLayoutConstraint!
     @IBOutlet weak var ploggingConsoleTimeLabelConstraint: NSLayoutConstraint!
@@ -51,7 +50,7 @@ class EditReviewViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         setTopGradationDesign()
-       // setGoogleMaps() // setUI() 로 옮기면 안됨!! <layout배열 꼬임>
+        //setGoogleMaps() // setUI() 로 옮기면 안됨!! <layout배열 꼬임>
     }
 
     func setUI() {
@@ -115,7 +114,26 @@ class EditReviewViewController: UIViewController {
     func setCosmosRate() {
         
     }
-
+        
+    // 활동 기록 선택하기 클릭
+    @IBAction func onClickedActivitySelectionBtn(_ sender: Any) {
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "EditReviewPopUpScreenViewController")
+        vcName?.modalPresentationStyle = .overFullScreen
+        vcName?.modalPresentationStyle = .overCurrentContext
+        vcName?.modalTransitionStyle = .crossDissolve
+        self.present(vcName!, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func onClickedMapFrameView(_ sender: Any) {
+        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "EditReviewPopUpScreenViewController")
+        vcName?.modalPresentationStyle = .overFullScreen
+        vcName?.modalPresentationStyle = .overCurrentContext
+        vcName?.modalTransitionStyle = .crossDissolve
+        self.present(vcName!, animated: true, completion: nil)
+        
+    }
+    
 }
 
 // 셀 어떻게 보여줘?

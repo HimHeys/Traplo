@@ -21,6 +21,7 @@
 		3F440C0426C8E87900B641F7 /* RecommendActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440C0326C8E87900B641F7 /* RecommendActivityViewController.swift */; };
 		3F440C0926C90A9300B641F7 /* MenuSideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440C0826C90A9300B641F7 /* MenuSideBarViewController.swift */; };
 		3F440C0C26CAC95800B641F7 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F440C0B26CAC95800B641F7 /* user.png */; };
+		3F599A4226D384560049FFE3 /* EditReviewPopUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F599A4126D384560049FFE3 /* EditReviewPopUpScreenViewController.swift */; };
 		3F619D7A26C3D26D000410FE /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 3F619D7926C3D26D000410FE /* AppIcon.appiconset */; };
 		3F619D7C26C41545000410FE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F619D7B26C41545000410FE /* LogInViewController.swift */; };
 		3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F66718226CBA00900BA21D1 /* Reviews.storyboard */; };
@@ -72,6 +73,7 @@
 		3F440C0326C8E87900B641F7 /* RecommendActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendActivityViewController.swift; sourceTree = "<group>"; };
 		3F440C0826C90A9300B641F7 /* MenuSideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSideBarViewController.swift; sourceTree = "<group>"; };
 		3F440C0B26CAC95800B641F7 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		3F599A4126D384560049FFE3 /* EditReviewPopUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReviewPopUpScreenViewController.swift; sourceTree = "<group>"; };
 		3F619D7926C3D26D000410FE /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		3F619D7B26C41545000410FE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3F66718226CBA00900BA21D1 /* Reviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reviews.storyboard; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			children = (
 				3F66718426CBA03700BA21D1 /* ReviewDetailsViewController.swift */,
 				3F66718E26D22E0B00BA21D1 /* EditReviewViewController.swift */,
+				3F599A4126D384560049FFE3 /* EditReviewPopUpScreenViewController.swift */,
 			);
 			path = Reviews;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				3F66718526CBA03700BA21D1 /* ReviewDetailsViewController.swift in Sources */,
 				3F14D36426C112E600F27B1E /* LogInBackGroundViewController.swift in Sources */,
 				3F14D36026C112E600F27B1E /* AppDelegate.swift in Sources */,
+				3F599A4226D384560049FFE3 /* EditReviewPopUpScreenViewController.swift in Sources */,
 				3F14D36226C112E600F27B1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

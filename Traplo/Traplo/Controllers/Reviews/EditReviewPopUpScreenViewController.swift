@@ -30,6 +30,29 @@ class EditReviewPopUpScreenViewController: UIViewController {
     }
 }
 
-class activityCollectionViewCell {
+extension EditReviewPopUpScreenViewController:UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "activityCollectionViewCell", for: indexPath) as? activityCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        
+      return cell
+
+
+    }
+    
+    
+}
+
+extension EditReviewPopUpScreenViewController:UICollectionViewDelegateFlowLayout {
+    
+}
+
+class activityCollectionViewCell : UICollectionViewCell{
     
 }

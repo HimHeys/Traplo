@@ -53,6 +53,10 @@ class EditReviewViewController: UIViewController {
         //setGoogleMaps() // setUI() 로 옮기면 안됨!! <layout배열 꼬임>
     }
 
+    @IBAction func onClickedXBtn(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
+    
     func setUI() {
         // height 설정
         let viewHeight = view.bounds.height

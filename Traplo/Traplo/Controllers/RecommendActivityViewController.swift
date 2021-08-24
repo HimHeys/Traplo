@@ -55,5 +55,8 @@ class RecommendActivityViewController : UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func present기록하기(_ sender: Any) {
+        
+    }
     
 }

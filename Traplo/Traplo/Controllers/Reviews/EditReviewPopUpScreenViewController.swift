@@ -32,7 +32,7 @@ class EditReviewPopUpScreenViewController: UIViewController {
 
 extension EditReviewPopUpScreenViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -40,6 +40,7 @@ extension EditReviewPopUpScreenViewController:UICollectionViewDataSource{
             return UICollectionViewCell()
         }
         
+      cell.setCellUI()
         
       return cell
 
@@ -50,9 +51,28 @@ extension EditReviewPopUpScreenViewController:UICollectionViewDataSource{
 }
 
 extension EditReviewPopUpScreenViewController:UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let viewHeight = collectionView.bounds.height
+        let viewWidth = collectionView.bounds.width
+       
+        return CGSize(width: (viewWidth/10)*9, height: viewHeight/6)
+    }
 }
 
 class activityCollectionViewCell : UICollectionViewCell{
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var startLabel: UILabel!
+    @IBOutlet weak var endLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBOutlet weak var mapFrameView: UIView!
+    
+    
+    func setCellUI() {
+        self.contentView.layer.cornerRadius = 10
+        mapFrameView.layer.cornerRadius = 10
+    }
     
 }

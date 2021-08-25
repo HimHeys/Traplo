@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PloggingRecord {
+struct PloggingRecordModel {
     let date:date
     let distance:Float
     let time:Float

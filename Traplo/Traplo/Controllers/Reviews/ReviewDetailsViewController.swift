@@ -114,6 +114,7 @@ class ReviewDetailsViewController: UIViewController {
     }
     
     func setCosmosRate() {
+        cosmosView.settings.updateOnTouch = false
         
     }
 

@@ -32,6 +32,7 @@
 		3F66718F26D22E0B00BA21D1 /* EditReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66718E26D22E0B00BA21D1 /* EditReviewViewController.swift */; };
 		3FF1A71F26D62174001AD31F /* PloggingRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A71E26D62174001AD31F /* PloggingRecordModel.swift */; };
 		3FF1A72126D62F9A001AD31F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A72026D62F9A001AD31F /* UserInfo.swift */; };
+		3FF1A72426D6767C001AD31F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3FF1A72326D6767C001AD31F /* Alamofire */; };
 		560A8F2AA54DFC9BFA0BAF0C /* Pods_Traplo_TraploUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */; };
 		E93A6339A6423BEF26C67141 /* Pods_TraploTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */; };
 /* End PBXBuildFile section */
@@ -99,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF1A72426D6767C001AD31F /* Alamofire in Frameworks */,
 				3F66718826CE7CD500BA21D1 /* Cosmos in Frameworks */,
 				187FF3CC1DD02EAA210ADD0F /* Pods_Traplo.framework in Frameworks */,
 			);
@@ -292,6 +294,7 @@
 			name = Traplo;
 			packageProductDependencies = (
 				3F66718726CE7CD500BA21D1 /* Cosmos */,
+				3FF1A72326D6767C001AD31F /* Alamofire */,
 			);
 			productName = Traplo;
 			productReference = 3F14D35C26C112E600F27B1E /* Traplo.app */;
@@ -370,6 +373,7 @@
 			mainGroup = 3F14D35326C112E600F27B1E;
 			packageReferences = (
 				3F66718626CE7CD500BA21D1 /* XCRemoteSwiftPackageReference "Cosmos" */,
+				3FF1A72226D6767C001AD31F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3F14D35D26C112E600F27B1E /* Products */;
 			projectDirPath = "";
@@ -913,6 +917,14 @@
 				minimumVersion = 23.0.0;
 			};
 		};
+		3FF1A72226D6767C001AD31F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -920,6 +932,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F66718626CE7CD500BA21D1 /* XCRemoteSwiftPackageReference "Cosmos" */;
 			productName = Cosmos;
+		};
+		3FF1A72326D6767C001AD31F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FF1A72226D6767C001AD31F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

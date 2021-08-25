@@ -16,7 +16,6 @@ import NaverThirdPartyLogin
 
 import Alamofire
 
-
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var backGroundBtn: UIButton!
@@ -33,6 +32,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loginInstance?.requestDeleteToken()
+
     
         backGroundBtn.layer.cornerRadius = 40
         
@@ -55,11 +56,11 @@ class LoginViewController: UIViewController {
     // -> 로그인 되어야 화면 전환 가능하게 구현해야한다!
     override func viewDidAppear(_ animated: Bool) {
         
-        let sb = UIStoryboard(name: "Activity", bundle: nil)
-        let vc = sb.instantiateViewController(identifier: "RecommendActivityViewController") as! RecommendActivityViewController
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .crossDissolve
-        self.present(vc, animated: true, completion: nil)
+//        let sb = UIStoryboard(name: "Activity", bundle: nil)
+//        let vc = sb.instantiateViewController(identifier: "RecommendActivityViewController") as! RecommendActivityViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        vc.modalTransitionStyle = .crossDissolve
+//        self.present(vc, animated: true, completion: nil)
         
     }
 
@@ -90,11 +91,30 @@ class LoginViewController: UIViewController {
                 _ = oauthToken
                // 어세스토큰
                let accessToken = oauthToken?.accessToken
+                
+                
+                let urlStr = "http://3.35.202.118:8080/api/v1/members/oauthKakao"
+                let url = URL(string: urlStr)!
+
+                let authorization = "\(accessToken)"
+
+                let req = AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: ["authorization": authorization])
+                  
+
+                req.responseJSON { response in
+                  print(response)
+          //        guard let result = response.result as? [String: Any] else { return }
+          //        guard let object = result["response"] as? [String: Any] else { return }
+          //        guard let name = object["name"] as? String else { return }
+          //        guard let email = object["email"] as? String else { return }
+          //
+          //        print(name+" "+email)
+                }
             }
         }
       }
     }
-    
+  
     // 네이버로 이용하기 버튼 함수
     @IBAction func onNaverLoginByAppTouched(_ sender: UIButton) {
       loginInstance?.delegate = self
@@ -111,29 +131,34 @@ class LoginViewController: UIViewController {
       
       guard let tokenType = loginInstance?.tokenType else { return }
       guard let accessToken = loginInstance?.accessToken else { return }
-      let urlStr = "https://openapi.naver.com/v1/nid/me"
+      let urlStr = "http://3.35.202.118:8080/api/v1/members/oauthNaver"
       let url = URL(string: urlStr)!
 
-//      let authorization = "\(tokenType) \(accessToken)"
-//
-//      let req = Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization": authorization])
-//
-//      req.responseJSON { response in
-//        guard let result = response.result.value as? [String: Any] else { return }
+      let authorization = "\(accessToken)"
+
+      let req = AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: ["authorization": authorization])
+        
+
+      req.responseJSON { response in
+        print(response)
+//          guard let result = response.result as? [String: Any] else { return }
 //        guard let object = result["response"] as? [String: Any] else { return }
 //        guard let name = object["name"] as? String else { return }
 //        guard let email = object["email"] as? String else { return }
-//        guard let nickname = object["nickname"] as? String else { return }
 //
-//        print(name+" "+email+" "+nickname)
-//        self.nameLabel.text = "\(name)"
-//        self.emailLabel.text = "\(email)"
-//        self.nicknameLabel.text = "\(nickname)"
+//        print(name+" "+email)
       }
     }
+}
 
 // 네이버
 extension LoginViewController: NaverThirdPartyLoginConnectionDelegate {
+    
+
+  func oauth20ConnectionDidOpenInAppBrowser(forOAuth request: URLRequest!) {
+  }
+    
+
   // 로그인에 성공했을 경우 호출
   func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
     print("[Success] : Success Naver Login")

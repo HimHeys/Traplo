@@ -11,6 +11,7 @@ import GoogleSignIn
 import NaverThirdPartyLogin
 import GoogleMaps
 
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -27,9 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } else {
               // Show the app's signed-in state.
             }
-          }
+        }
         
         // 네이버 로그인
+        
         let instance = NaverThirdPartyLoginConnection.getSharedInstance()
             
             // 네이버 앱으로 인증하는 방식을 활성화
@@ -76,7 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return false
     }
     
-   
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -91,6 +92,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    
 
 }
 

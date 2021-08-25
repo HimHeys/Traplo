@@ -48,6 +48,7 @@ struct date {
 // 여러개 존재하는 PloggingRecordModel 객체를 관리합니다.
 class PloggingRecordModelManager {
     
+    // 싱글톤~~
     static let PloggingRecordModelShared = PloggingRecordModelManager()
     
     static var ploggingRecordModelLastId: Int = 0

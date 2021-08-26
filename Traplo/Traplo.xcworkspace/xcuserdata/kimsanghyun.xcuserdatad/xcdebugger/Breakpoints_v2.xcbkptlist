@@ -39,17 +39,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "35940885-F0D0-4D21-9186-2B1CD8193569"
-            shouldBeEnabled = "Yes"
+            uuid = "236CFBCB-0864-43BB-A804-B49BAC8939B5"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Traplo/Controllers/LogIn/LogInViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "getNaverInfo()"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "AFRequestByToken(authorization:com:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "236CFBCB-0864-43BB-A804-B49BAC8939B5 - 65f1f187667cfd6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Traplo.LoginViewController.AFRequestByToken(authorization: Swift.String, com: Swift.String) -&gt; ()"
+                  moduleName = "Traplo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimsanghyun/Desktop/GitHub/Traplo/Traplo/Traplo/Controllers/LogIn/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "1304">
+               </Location>
+               <Location
+                  uuid = "236CFBCB-0864-43BB-A804-B49BAC8939B5 - eea9bf2c96d23a91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in Traplo.LoginViewController.AFRequestByToken(authorization: Swift.String, com: Swift.String) -&gt; ()"
+                  moduleName = "Traplo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimsanghyun/Desktop/GitHub/Traplo/Traplo/Traplo/Controllers/LogIn/LogInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

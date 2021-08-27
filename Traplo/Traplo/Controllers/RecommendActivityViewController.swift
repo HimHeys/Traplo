@@ -36,7 +36,7 @@ class RecommendActivityViewController : UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-       
+        print(UserInfo.shared.name+UserInfo.shared.email)
     }
     
     @IBAction func onMenuBtnTouched(_ sender: Any) {

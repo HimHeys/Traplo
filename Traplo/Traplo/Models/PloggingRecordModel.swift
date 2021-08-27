@@ -10,7 +10,7 @@ import Foundation
 struct PloggingRecordModel {
     
     var modelId : Int // model 아이디
-    var ownerId : String // 기록 작성자
+    var ownerId : Int // 기록 작성자
     
     var date:date // 기록일
     var distance:Float // 거리

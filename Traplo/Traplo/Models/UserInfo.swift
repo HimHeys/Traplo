@@ -12,13 +12,21 @@ class UserInfo {
     // 싱글톤~
     static var shared = UserInfo()
     
-    var userId :String
+    var userId :Int
     var name : String
-    //var profileImage
+    var profileImage: String
     var email : String
-    init(userId:String = "ID",name:String = "이름",email:String = "email") {
+    
+    init(userId:Int = 0,name:String = "이름",profileImage:String = "profileImage",email:String = "email") {
         self.userId = userId
         self.name = name
+        self.profileImage = profileImage
+        self.email = email
+    }
+    func update(userId:Int ,name:String ,profileImage:String ,email:String) {
+        self.userId = userId
+        self.name = name
+        self.profileImage = profileImage
         self.email = email
     }
     

@@ -23,8 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>kakao</string>
-				<string>93a0755257e0b57cf8ed85ffff2e5ba2</string>
+				<string>kakao93a0755257e0b57cf8ed85ffff2e5ba2</string>
 			</array>
 		</dict>
 		<dict>

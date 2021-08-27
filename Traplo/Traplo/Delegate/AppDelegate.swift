@@ -7,6 +7,7 @@
 
 import UIKit
 import KakaoSDKCommon
+import KakaoSDKAuth
 import GoogleSignIn
 import NaverThirdPartyLogin
 import GoogleMaps
@@ -17,20 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
         // init 카카오로그인
         KakaoSDKCommon.initSDK(appKey: "93a0755257e0b57cf8ed85ffff2e5ba2")
         
-        // 구글 로그인 상태 자동 복원
-        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-            if error != nil || user == nil {
-              // Show the app's signed-out state.
-            } else {
-              // Show the app's signed-in state.
-            }
-        }
+        setNaverLogin()
+        // Google Maps
+        GMSServices.provideAPIKey("AIzaSyD9l1nhuI-8iEzG_69Q66ltr2Ao7EJPBU4")
         
-        // 네이버 로그인
+        return true
+    }
+    // 네이버 로그인
+    func setNaverLogin(){
         
         let instance = NaverThirdPartyLoginConnection.getSharedInstance()
             
@@ -51,11 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             instance?.consumerSecret = kConsumerSecret
             // 애플리케이션 이름
             instance?.appName = kServiceAppName
-        
-        // Google Maps
-        GMSServices.provideAPIKey("AIzaSyD9l1nhuI-8iEzG_69Q66ltr2Ao7EJPBU4")
-        
-        return true
     }
     
     //구글 로그인
@@ -70,8 +63,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
       }else {
       // Handle other custom URL types.
+        if (AuthApi.isKakaoTalkLoginUrl(url)) {
+            return AuthController.handleOpenUrl(url: url)
+        }else{
         NaverThirdPartyLoginConnection.getSharedInstance()?.application(app, open: url, options: options)
-        
+        }
         return true
       }
       // If not handled by this app, return false.
@@ -91,8 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-    
+  
 
 }
 

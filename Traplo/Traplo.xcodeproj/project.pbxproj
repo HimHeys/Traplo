@@ -33,6 +33,10 @@
 		3FF1A71F26D62174001AD31F /* PloggingRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A71E26D62174001AD31F /* PloggingRecordModel.swift */; };
 		3FF1A72126D62F9A001AD31F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A72026D62F9A001AD31F /* UserInfo.swift */; };
 		3FF1A72426D6767C001AD31F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3FF1A72326D6767C001AD31F /* Alamofire */; };
+		3FF1A72626DA12FC001AD31F /* TouristSpot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF1A72526DA12FC001AD31F /* TouristSpot.storyboard */; };
+		3FF1A72926DA13A8001AD31F /* MapSearchTouristSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A72826DA13A8001AD31F /* MapSearchTouristSpotViewController.swift */; };
+		3FF1A72B26DA13C1001AD31F /* ListSearchTouristSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A72A26DA13C1001AD31F /* ListSearchTouristSpotViewController.swift */; };
+		3FF1A72D26DA13E7001AD31F /* SelectTouristSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A72C26DA13E7001AD31F /* SelectTouristSpotViewController.swift */; };
 		560A8F2AA54DFC9BFA0BAF0C /* Pods_Traplo_TraploUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA55E18A5AADDEEDC860EC4 /* Pods_Traplo_TraploUITests.framework */; };
 		E93A6339A6423BEF26C67141 /* Pods_TraploTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB29A4510F38CDE48402DD4 /* Pods_TraploTests.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +90,10 @@
 		3F66718E26D22E0B00BA21D1 /* EditReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReviewViewController.swift; sourceTree = "<group>"; };
 		3FF1A71E26D62174001AD31F /* PloggingRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PloggingRecordModel.swift; sourceTree = "<group>"; };
 		3FF1A72026D62F9A001AD31F /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		3FF1A72526DA12FC001AD31F /* TouristSpot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TouristSpot.storyboard; sourceTree = "<group>"; };
+		3FF1A72826DA13A8001AD31F /* MapSearchTouristSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchTouristSpotViewController.swift; sourceTree = "<group>"; };
+		3FF1A72A26DA13C1001AD31F /* ListSearchTouristSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSearchTouristSpotViewController.swift; sourceTree = "<group>"; };
+		3FF1A72C26DA13E7001AD31F /* SelectTouristSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTouristSpotViewController.swift; sourceTree = "<group>"; };
 		4734760EF9F75B9406EC99C1 /* Pods-Traplo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.release.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.release.xcconfig"; sourceTree = "<group>"; };
 		79C038F6126298E0A9A3B49D /* Pods-Traplo-TraploUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo-TraploUITests.debug.xcconfig"; path = "Target Support Files/Pods-Traplo-TraploUITests/Pods-Traplo-TraploUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90B3C4135A860B57AD5D74CE /* Pods-Traplo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traplo.debug.xcconfig"; path = "Target Support Files/Pods-Traplo/Pods-Traplo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +211,7 @@
 		3F440C0626C8F9EB00B641F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3FF1A72726DA1382001AD31F /* TouristSpot */,
 				3F66718D26D22DE600BA21D1 /* Reviews */,
 				3F440C0A26CA4C4800B641F7 /* LogIn */,
 				3F440C0326C8E87900B641F7 /* RecommendActivityViewController.swift */,
@@ -218,6 +227,7 @@
 				3F14D36526C112E600F27B1E /* LogIn.storyboard */,
 				3F440C0126C8E02900B641F7 /* Activity.storyboard */,
 				3F66718226CBA00900BA21D1 /* Reviews.storyboard */,
+				3FF1A72526DA12FC001AD31F /* TouristSpot.storyboard */,
 			);
 			path = "Views(Storyboard)";
 			sourceTree = "<group>";
@@ -248,6 +258,16 @@
 				3FF1A72026D62F9A001AD31F /* UserInfo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3FF1A72726DA1382001AD31F /* TouristSpot */ = {
+			isa = PBXGroup;
+			children = (
+				3FF1A72826DA13A8001AD31F /* MapSearchTouristSpotViewController.swift */,
+				3FF1A72A26DA13C1001AD31F /* ListSearchTouristSpotViewController.swift */,
+				3FF1A72C26DA13E7001AD31F /* SelectTouristSpotViewController.swift */,
+			);
+			path = TouristSpot;
 			sourceTree = "<group>";
 		};
 		56837C0F2FDAD0FBB24F13F1 /* Frameworks */ = {
@@ -397,6 +417,7 @@
 				3F66718C26D144B800BA21D1 /* Group 8.png in Resources */,
 				3F14D36926C112E700F27B1E /* Assets.xcassets in Resources */,
 				3F440C0C26CAC95800B641F7 /* user.png in Resources */,
+				3FF1A72626DA12FC001AD31F /* TouristSpot.storyboard in Resources */,
 				3F619D7A26C3D26D000410FE /* AppIcon.appiconset in Resources */,
 				3F66718A26D144B100BA21D1 /* Rectangle 58.png in Resources */,
 				3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */,
@@ -563,6 +584,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F66718F26D22E0B00BA21D1 /* EditReviewViewController.swift in Sources */,
+				3FF1A72D26DA13E7001AD31F /* SelectTouristSpotViewController.swift in Sources */,
+				3FF1A72B26DA13C1001AD31F /* ListSearchTouristSpotViewController.swift in Sources */,
 				3F440C0926C90A9300B641F7 /* MenuSideBarViewController.swift in Sources */,
 				3F440C0426C8E87900B641F7 /* RecommendActivityViewController.swift in Sources */,
 				3FF1A71F26D62174001AD31F /* PloggingRecordModel.swift in Sources */,
@@ -572,6 +595,7 @@
 				3F14D36026C112E600F27B1E /* AppDelegate.swift in Sources */,
 				3F599A4226D384560049FFE3 /* EditReviewPopUpScreenViewController.swift in Sources */,
 				3FF1A72126D62F9A001AD31F /* UserInfo.swift in Sources */,
+				3FF1A72926DA13A8001AD31F /* MapSearchTouristSpotViewController.swift in Sources */,
 				3F14D36226C112E600F27B1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

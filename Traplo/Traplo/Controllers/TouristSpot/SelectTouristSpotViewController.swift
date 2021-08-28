@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 관광지 선택 페이지
 class SelectTouristSpotViewController: UIViewController {
 
     override func viewDidLoad() {

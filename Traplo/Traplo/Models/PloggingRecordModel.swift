@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PloggingRecordModel {
+struct PloggingRecordModel : Equatable{
     
     var modelId : Int // model 아이디
     var ownerId : Int // 기록 작성자

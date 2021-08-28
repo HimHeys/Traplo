@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 관광지 검색한 후 -map 페이지
 class MapSearchTouristSpotViewController: UIViewController {
 
     override func viewDidLoad() {

@@ -15,8 +15,32 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXO-Kd-Mkm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3t-Hy-6De">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="45.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="U3t-Hy-6De" secondAttribute="trailing" id="Yjf-m9-L0y"/>
+                                    <constraint firstAttribute="bottom" secondItem="U3t-Hy-6De" secondAttribute="bottom" id="w7w-Eh-eX3"/>
+                                    <constraint firstItem="U3t-Hy-6De" firstAttribute="leading" secondItem="AXO-Kd-Mkm" secondAttribute="leading" id="zds-Da-Xbn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="U3t-Hy-6De" secondAttribute="top" id="GhW-eJ-mnY"/>
+                            <constraint firstItem="AXO-Kd-Mkm" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.1" id="cRw-el-1Ge"/>
+                            <constraint firstItem="AXO-Kd-Mkm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="oPC-R4-ZTY"/>
+                            <constraint firstItem="AXO-Kd-Mkm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="pKA-mY-8EJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AXO-Kd-Mkm" secondAttribute="trailing" id="zoe-V5-AdU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -30,8 +54,32 @@
                     <view key="view" contentMode="scaleToFill" id="so5-h9-dbw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jA2-Ia-fBG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D68-0D-0If">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="45.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="D68-0D-0If" secondAttribute="bottom" id="3Sm-EM-LZO"/>
+                                    <constraint firstItem="D68-0D-0If" firstAttribute="leading" secondItem="jA2-Ia-fBG" secondAttribute="leading" id="neM-0z-0Dm"/>
+                                    <constraint firstAttribute="trailing" secondItem="D68-0D-0If" secondAttribute="trailing" id="xbu-Xz-O8N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JLh-5R-rU5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D68-0D-0If" firstAttribute="top" secondItem="JLh-5R-rU5" secondAttribute="top" id="4PJ-X9-69s"/>
+                            <constraint firstItem="JLh-5R-rU5" firstAttribute="trailing" secondItem="jA2-Ia-fBG" secondAttribute="trailing" id="5Pi-TQ-bIY"/>
+                            <constraint firstItem="jA2-Ia-fBG" firstAttribute="height" secondItem="so5-h9-dbw" secondAttribute="height" multiplier="0.1" id="fTf-PM-RNa"/>
+                            <constraint firstItem="jA2-Ia-fBG" firstAttribute="top" secondItem="so5-h9-dbw" secondAttribute="top" id="sn9-Un-jI1"/>
+                            <constraint firstItem="jA2-Ia-fBG" firstAttribute="leading" secondItem="JLh-5R-rU5" secondAttribute="leading" id="y69-L1-0o4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yw0-yt-4YB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -45,8 +93,32 @@
                     <view key="view" contentMode="scaleToFill" id="FhN-cS-j2Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-5R-LOg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-RX-P94">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="45.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Wbm-RX-P94" firstAttribute="leading" secondItem="Gf5-5R-LOg" secondAttribute="leading" id="54V-82-Nid"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wbm-RX-P94" secondAttribute="bottom" id="OZw-p0-672"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wbm-RX-P94" secondAttribute="trailing" id="oSa-RX-6EE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eXW-WI-RTd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="top" secondItem="Gf5-5R-LOg" secondAttribute="top" id="0mX-OX-JJG"/>
+                            <constraint firstItem="Gf5-5R-LOg" firstAttribute="height" secondItem="FhN-cS-j2Y" secondAttribute="height" multiplier="0.1" id="8Ug-Zk-fe3"/>
+                            <constraint firstItem="eXW-WI-RTd" firstAttribute="trailing" secondItem="Gf5-5R-LOg" secondAttribute="trailing" id="Lit-9p-If8"/>
+                            <constraint firstItem="Wbm-RX-P94" firstAttribute="top" secondItem="eXW-WI-RTd" secondAttribute="top" id="dN5-4V-tkb"/>
+                            <constraint firstItem="Gf5-5R-LOg" firstAttribute="leading" secondItem="eXW-WI-RTd" secondAttribute="leading" id="tal-dt-k7I"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBE-Qq-TTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

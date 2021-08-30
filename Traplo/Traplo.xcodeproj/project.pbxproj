@@ -16,7 +16,8 @@
 		3F14D36C26C112E700F27B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F14D36A26C112E700F27B1E /* LaunchScreen.storyboard */; };
 		3F14D37726C112E700F27B1E /* TraploTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D37626C112E700F27B1E /* TraploTests.swift */; };
 		3F14D38226C112E700F27B1E /* TraploUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D38126C112E700F27B1E /* TraploUITests.swift */; };
-		3F14D39526C2E25400F27B1E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F14D39426C2E25400F27B1E /* background.png */; };
+		3F3689DA26DCF57A00EE8027 /* Group 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3689D826DCF57A00EE8027 /* Group 11.png */; };
+		3F3689DB26DCF57A00EE8027 /* Group 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3689D926DCF57A00EE8027 /* Group 10.png */; };
 		3F440C0226C8E02900B641F7 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F440C0126C8E02900B641F7 /* Activity.storyboard */; };
 		3F440C0426C8E87900B641F7 /* RecommendActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440C0326C8E87900B641F7 /* RecommendActivityViewController.swift */; };
 		3F440C0926C90A9300B641F7 /* MenuSideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F440C0826C90A9300B641F7 /* MenuSideBarViewController.swift */; };
@@ -75,7 +76,9 @@
 		3F14D37D26C112E700F27B1E /* TraploUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraploUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F14D38126C112E700F27B1E /* TraploUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraploUITests.swift; sourceTree = "<group>"; };
 		3F14D38326C112E700F27B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F14D39426C2E25400F27B1E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../../background.png; sourceTree = "<group>"; };
+		3F3689D826DCF57A00EE8027 /* Group 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 11.png"; sourceTree = "<group>"; };
+		3F3689D926DCF57A00EE8027 /* Group 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 10.png"; sourceTree = "<group>"; };
+		3F3689DD26DCF59600EE8027 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		3F440C0126C8E02900B641F7 /* Activity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		3F440C0326C8E87900B641F7 /* RecommendActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendActivityViewController.swift; sourceTree = "<group>"; };
 		3F440C0826C90A9300B641F7 /* MenuSideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSideBarViewController.swift; sourceTree = "<group>"; };
@@ -189,14 +192,25 @@
 		3F14D39126C2E12D00F27B1E /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				3F3689DC26DCF58A00EE8027 /* 사진 */,
 				3F619D7926C3D26D000410FE /* AppIcon.appiconset */,
 				3F14D36826C112E700F27B1E /* Assets.xcassets */,
-				3F14D39426C2E25400F27B1E /* background.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		3F3689DC26DCF58A00EE8027 /* 사진 */ = {
+			isa = PBXGroup;
+			children = (
+				3F3689D926DCF57A00EE8027 /* Group 10.png */,
+				3F3689D826DCF57A00EE8027 /* Group 11.png */,
+				3F3689DD26DCF59600EE8027 /* background.png */,
 				3F440C0B26CAC95800B641F7 /* user.png */,
 				3F66718B26D144B800BA21D1 /* Group 8.png */,
 				3F66718926D144B100BA21D1 /* Rectangle 58.png */,
 			);
-			path = resources;
+			name = "사진";
+			path = "사진";
 			sourceTree = "<group>";
 		};
 		3F440C0526C8F9BB00B641F7 /* Delegate */ = {
@@ -412,12 +426,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F14D36C26C112E700F27B1E /* LaunchScreen.storyboard in Resources */,
-				3F14D39526C2E25400F27B1E /* background.png in Resources */,
 				3F440C0226C8E02900B641F7 /* Activity.storyboard in Resources */,
 				3F66718C26D144B800BA21D1 /* Group 8.png in Resources */,
+				3F3689DB26DCF57A00EE8027 /* Group 10.png in Resources */,
 				3F14D36926C112E700F27B1E /* Assets.xcassets in Resources */,
 				3F440C0C26CAC95800B641F7 /* user.png in Resources */,
 				3FF1A72626DA12FC001AD31F /* TouristSpot.storyboard in Resources */,
+				3F3689DA26DCF57A00EE8027 /* Group 11.png in Resources */,
 				3F619D7A26C3D26D000410FE /* AppIcon.appiconset in Resources */,
 				3F66718A26D144B100BA21D1 /* Rectangle 58.png in Resources */,
 				3F66718326CBA00900BA21D1 /* Reviews.storyboard in Resources */,

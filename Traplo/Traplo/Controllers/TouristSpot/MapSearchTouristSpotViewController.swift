@@ -18,8 +18,10 @@ class MapSearchTouristSpotViewController: UIViewController {
     let topDesignColor1 = UIColor(named: "Color2")?.cgColor
     let topDesignColor2 = UIColor(named: "Color1")?.cgColor
     
+    //reference
     @IBOutlet weak var topDesignView: UIView!
     @IBOutlet weak var topDesignLayoutView: UIView!
+    @IBOutlet weak var toggleBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -28,6 +30,13 @@ class MapSearchTouristSpotViewController: UIViewController {
         setUI()
 
     }
+    
+    @IBAction func onToggleBtnClicked(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListSearchTouristSpotViewController")
+        vc?.modalPresentationStyle = .overFullScreen
+        self.present(vc!, animated: false, completion: nil)
+    }
+    
     
     func setUI() {
         setTopGradationDesign()
@@ -44,4 +53,5 @@ class MapSearchTouristSpotViewController: UIViewController {
 
         self.topDesignView.bringSubviewToFront(topDesignLayoutView)
     }
+   
 }

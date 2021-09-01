@@ -23,6 +23,7 @@ class UserInfo {
         self.profileImage = profileImage
         self.email = email
     }
+    
     func update(userId:Int ,name:String ,profileImage:String ,email:String) {
         self.userId = userId
         self.name = name

@@ -26,6 +26,12 @@ class ListSearchTouristSpotViewController: UIViewController {
         setUI()
 
     }
+    @IBAction func onToggleBtnClicked(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapSearchTouristSpotViewController")
+        vc?.modalPresentationStyle = .overFullScreen
+        self.present(vc!, animated: false, completion: nil)
+    }
+    
     
     func setUI() {
         setTopGradationDesign()

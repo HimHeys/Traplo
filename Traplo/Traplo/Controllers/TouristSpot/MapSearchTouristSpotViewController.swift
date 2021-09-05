@@ -23,7 +23,7 @@ class MapSearchTouristSpotViewController: UIViewController {
     @IBOutlet weak var topDesignView: UIView!
     @IBOutlet weak var topDesignLayoutView: UIView!
     @IBOutlet weak var toggleBtn: UIButton!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var keyWordCollectionView: UICollectionView!
     
     
     override func viewDidLoad() {

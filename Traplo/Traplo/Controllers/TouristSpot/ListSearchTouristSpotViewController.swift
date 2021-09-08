@@ -19,10 +19,14 @@ class ListSearchTouristSpotViewController: UIViewController {
     //UIColor
     let topDesignColor1 = UIColor(named: "Color2")?.cgColor
     let topDesignColor2 = UIColor(named: "Color1")?.cgColor
+    
+    
+    @IBOutlet weak var 검색창맵있는뷰: UIView!
     @IBOutlet weak var topDesignView: UIView!
     @IBOutlet weak var topDesignLayoutView: UIView!
     @IBOutlet weak var keyWordCollectionView: UICollectionView!
     
+    @IBOutlet weak var contentCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +43,8 @@ class ListSearchTouristSpotViewController: UIViewController {
     
     
     func setUI() {
+        검색창맵있는뷰.setBorderShadow(borderWidth: 0, cornerRadius: 0, useShadowEffect: true, shadowRadius: 3.0)
+       
         setTopGradationDesign()
     }
     // 상단 그라데이션 디자인
@@ -128,7 +134,7 @@ class tourSpotContentCollectionViewCell: UICollectionViewCell {
         self.layer.masksToBounds = false
         self.contentView.layer.masksToBounds = false
         // 그림자 설정
-        shadowBorderView.setBorderShadow(borderWidth: 0.5, cornerRadius: 5, useShadowEffect: true)
+        shadowBorderView.setBorderShadow(borderWidth: 0.5, cornerRadius: 5, useShadowEffect: true, shadowRadius: 2)
         
     }
    
@@ -136,21 +142,50 @@ class tourSpotContentCollectionViewCell: UICollectionViewCell {
 
 
 
+//extension 영역
+
+// 그림자 효과
 extension UIView {
-    func setBorderShadow(borderWidth : CGFloat,cornerRadius : CGFloat,borderColor : CGColor = UIColor.systemGray.cgColor, useShadowEffect boolean : Bool){
+    func setBorderShadow(borderWidth : CGFloat,cornerRadius : CGFloat,borderColor : CGColor = UIColor.systemGray.cgColor, useShadowEffect boolean : Bool, shadowRadius : CGFloat){
         
         //테두리 설정
         self.layer.borderWidth = borderWidth
         self.layer.cornerRadius = cornerRadius
         self.layer.borderColor = borderColor
         
+        
         //테두리 그림자 효과 설정
         self.layer.masksToBounds = !boolean
         self.layer.shadowColor = UIColor.systemGray.cgColor // 그림자 색
-        self.layer.shadowOffset = CGSize(width: 5, height: 5) // 그림자를 이동시키는 정도
+        self.layer.shadowOffset = CGSize(width: 3, height: 3) // 그림자를 이동시키는 정도
         self.layer.shadowOpacity = 0.7 //그림자 투명도
-        self.layer.shadowRadius = 2 //그림자 경계의 선명도 숫자가 클수록 그림자가 많이 퍼진다.
+        self.layer.shadowRadius = shadowRadius //그림자 경계의 선명도 숫자가 클수록 그림자가 많이 퍼진다.
     }
 }
 
-
+// layer -> 특정 부분만 선 추가
+extension CALayer {
+    func addBorder(_ arr_edge: [UIRectEdge], color: UIColor, width: CGFloat) {
+        for edge in arr_edge {
+            let border = CALayer()
+            switch edge {
+            case UIRectEdge.top:
+                border.frame = CGRect.init(x: 0, y: 0, width: frame.width, height: width)
+                break
+            case UIRectEdge.bottom:
+                border.frame = CGRect.init(x: 0, y: frame.height - width, width: frame.width, height: width)
+                break
+            case UIRectEdge.left:
+                border.frame = CGRect.init(x: 0, y: 0, width: width, height: frame.height)
+                break
+            case UIRectEdge.right:
+                border.frame = CGRect.init(x: frame.width - width, y: 0, width: width, height: frame.height)
+                break
+            default:
+                break
+            }
+            border.backgroundColor = color.cgColor;
+            self.addSublayer(border)
+        }
+    }
+}

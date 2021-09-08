@@ -24,6 +24,7 @@ class MapSearchTouristSpotViewController: UIViewController {
     @IBOutlet weak var topDesignLayoutView: UIView!
     @IBOutlet weak var toggleBtn: UIButton!
     @IBOutlet weak var keyWordCollectionView: UICollectionView!
+    @IBOutlet weak var 검색창리스트버튼있는뷰: UIView!
     
     
     override func viewDidLoad() {
@@ -41,6 +42,9 @@ class MapSearchTouristSpotViewController: UIViewController {
     
     
     func setUI() {
+       
+        검색창리스트버튼있는뷰.setBorderShadow(borderWidth: 0, cornerRadius: 0, useShadowEffect: true, shadowRadius: 3.5)
+
         setTopGradationDesign()
     }
     // 상단 그라데이션 디자인

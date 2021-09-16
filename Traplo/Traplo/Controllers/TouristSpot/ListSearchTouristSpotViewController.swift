@@ -140,8 +140,6 @@ class tourSpotContentCollectionViewCell: UICollectionViewCell {
    
 }
 
-
-
 //extension 영역
 
 // 그림자 효과

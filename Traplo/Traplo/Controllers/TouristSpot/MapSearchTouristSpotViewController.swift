@@ -47,6 +47,7 @@ class MapSearchTouristSpotViewController: UIViewController {
 
         setTopGradationDesign()
     }
+    
     // 상단 그라데이션 디자인
     func setTopGradationDesign() {
         
@@ -61,6 +62,7 @@ class MapSearchTouristSpotViewController: UIViewController {
     }
    
 }
+
 extension MapSearchTouristSpotViewController:UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
